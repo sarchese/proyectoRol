@@ -10,17 +10,23 @@ using System.Windows.Forms;
 
 namespace CreadorFichasRol
 {
-    public partial class Form1 : Form
+    public partial class frmPlantilla : Form
     {
-        int test;
-        public Form1()
+        enum Atributo { Fue, Int, Con, Des, Sab, Car };   
+                int test;
+        public frmPlantilla()
         {
             InitializeComponent();
-            Tirada();
+            foreach (string x in Enum.GetNames(typeof(Atributo))) {
+                cbAttCar.Items.Add(x);
+                cbAttCon.Items.Add(x);
+                cbAttDes.Items.Add(x);
+                cbAttFue.Items.Add(x);
+                cbAttInt.Items.Add(x);
+                cbAttSab.Items.Add(x);
+            } 
         }
-
-
-        private void Tirada()
+     private int TiradaAtributos()
         {
             int[] array = new int[4];
             var random = new Random();
@@ -38,13 +44,25 @@ namespace CreadorFichasRol
                 test += array[i];
                     //MessageBox.Show(i.ToString());                
             }
-            //muestra en pantalla
-            MessageBox.Show(test.ToString());
-
+            return test;
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            do
+            {
+                TiradaAtributos();
+            }
+            while (test < 8);
+            //txtFuerza.Text = test.ToString();
+            test = 0;
+      
+            
+        }
 
+        private void cbAttFue_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

@@ -7,3 +7,12 @@ F:\Proyecto\CreadorFichasRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
 F:\Proyecto\CreadorFichasRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
 F:\Proyecto\CreadorFichasRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
 F:\Proyecto\CreadorFichasRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojResolveAssemblyReference.cache
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
+C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
