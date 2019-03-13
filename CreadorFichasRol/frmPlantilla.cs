@@ -58,6 +58,10 @@ namespace CreadorFichasRol
          private void Bonificadores()
         {
             Int32.TryParse(txtFue.Text, out int Fue);
+            if (Fue == 8 || Fue == 9)
+            {
+                txtBonFue.Text = (-1).ToString();
+            }else
             txtBonFue.Text = ((Fue - 10) / 2).ToString();
         }   
     }

@@ -34,3 +34,4 @@ F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojAssemblyReference.cache
