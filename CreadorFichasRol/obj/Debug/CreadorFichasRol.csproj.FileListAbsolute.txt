@@ -16,3 +16,12 @@ C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol
 C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
 C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
 C:\Projekte\c#\proyectoRol.git\trunk\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojResolveAssemblyReference.cache
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb

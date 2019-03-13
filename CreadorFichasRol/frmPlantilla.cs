@@ -28,41 +28,37 @@ namespace CreadorFichasRol
         }
      private int TiradaAtributos()
         {
-            int[] array = new int[4];
-            var random = new Random();
-            //genera tantos numeros como grande sea el array
-            for (int i = 0; i < array.Length; i++)
+            do
             {
-                array[i] = random.Next(1, 6);
-            }
-            //ordena los numeros
-            Array.Sort(array);
-            Array.Reverse(array);
-            //suma los tres primeros
-            for (int i = 0; i < array.Length-1; i++)
-            {
-                test += array[i];
-                    //MessageBox.Show(i.ToString());                
-            }
+                int[] array = new int[4];
+                var random = new Random();
+                //genera tantos numeros como grande sea el array
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = random.Next(1, 6);
+                }
+                //ordena los numeros
+                Array.Sort(array);
+                Array.Reverse(array);
+                //suma los tres primeros
+                test = array[0] + array[1] + array[2];
+            } while (test < 8);            
             return test;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            do
-            {
-                TiradaAtributos();
+            int[] rellenarAtributos = new int[6];
+            for (int i = 0; i < rellenarAtributos.Length; i++)
+            {             
+              rellenarAtributos[i] = TiradaAtributos();                
             }
-            while (test < 8);
-            //txtFuerza.Text = test.ToString();
-            test = 0;
-      
-            
-        }
-
-        private void cbAttFue_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+            txtFue.Text = TiradaAtributos().ToString();
+            txtCar.Text = rellenarAtributos[1].ToString();
+            txtCon.Text = rellenarAtributos[2].ToString();
+            txtDes.Text = rellenarAtributos[3].ToString();
+            txtSab.Text = rellenarAtributos[4].ToString();
+            txtInt.Text = rellenarAtributos[5].ToString();
+        }        
     }
 }

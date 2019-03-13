@@ -32,19 +32,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtFuerza = new System.Windows.Forms.TextBox();
+            this.txtFue = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtInt = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSab = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDes = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtCon = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtCar = new System.Windows.Forms.TextBox();
             this.cbAttFue = new System.Windows.Forms.ComboBox();
             this.cbAttInt = new System.Windows.Forms.ComboBox();
             this.cbAttCar = new System.Windows.Forms.ComboBox();
@@ -89,12 +89,12 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Alineamiento";
             // 
-            // txtFuerza
+            // txtFue
             // 
-            this.txtFuerza.Location = new System.Drawing.Point(101, 98);
-            this.txtFuerza.Name = "txtFuerza";
-            this.txtFuerza.Size = new System.Drawing.Size(40, 22);
-            this.txtFuerza.TabIndex = 5;
+            this.txtFue.Location = new System.Drawing.Point(101, 98);
+            this.txtFue.Name = "txtFue";
+            this.txtFue.Size = new System.Drawing.Size(40, 22);
+            this.txtFue.TabIndex = 5;
             // 
             // textBox2
             // 
@@ -120,12 +120,12 @@
             this.textBox1.Size = new System.Drawing.Size(30, 22);
             this.textBox1.TabIndex = 10;
             // 
-            // textBox3
+            // txtInt
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(40, 22);
-            this.textBox3.TabIndex = 9;
+            this.txtInt.Location = new System.Drawing.Point(101, 137);
+            this.txtInt.Name = "txtInt";
+            this.txtInt.Size = new System.Drawing.Size(40, 22);
+            this.txtInt.TabIndex = 9;
             // 
             // textBox4
             // 
@@ -134,12 +134,12 @@
             this.textBox4.Size = new System.Drawing.Size(30, 22);
             this.textBox4.TabIndex = 13;
             // 
-            // textBox5
+            // txtSab
             // 
-            this.textBox5.Location = new System.Drawing.Point(101, 173);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(40, 22);
-            this.textBox5.TabIndex = 12;
+            this.txtSab.Location = new System.Drawing.Point(101, 173);
+            this.txtSab.Name = "txtSab";
+            this.txtSab.Size = new System.Drawing.Size(40, 22);
+            this.txtSab.TabIndex = 12;
             // 
             // textBox6
             // 
@@ -148,12 +148,12 @@
             this.textBox6.Size = new System.Drawing.Size(30, 22);
             this.textBox6.TabIndex = 22;
             // 
-            // textBox7
+            // txtDes
             // 
-            this.textBox7.Location = new System.Drawing.Point(101, 285);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(40, 22);
-            this.textBox7.TabIndex = 21;
+            this.txtDes.Location = new System.Drawing.Point(101, 285);
+            this.txtDes.Name = "txtDes";
+            this.txtDes.Size = new System.Drawing.Size(40, 22);
+            this.txtDes.TabIndex = 21;
             // 
             // textBox8
             // 
@@ -162,12 +162,12 @@
             this.textBox8.Size = new System.Drawing.Size(30, 22);
             this.textBox8.TabIndex = 19;
             // 
-            // textBox9
+            // txtCon
             // 
-            this.textBox9.Location = new System.Drawing.Point(101, 247);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(40, 22);
-            this.textBox9.TabIndex = 18;
+            this.txtCon.Location = new System.Drawing.Point(101, 247);
+            this.txtCon.Name = "txtCon";
+            this.txtCon.Size = new System.Drawing.Size(40, 22);
+            this.txtCon.TabIndex = 18;
             // 
             // textBox10
             // 
@@ -176,12 +176,12 @@
             this.textBox10.Size = new System.Drawing.Size(30, 22);
             this.textBox10.TabIndex = 16;
             // 
-            // textBox11
+            // txtCar
             // 
-            this.textBox11.Location = new System.Drawing.Point(101, 210);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(40, 22);
-            this.textBox11.TabIndex = 15;
+            this.txtCar.Location = new System.Drawing.Point(101, 210);
+            this.txtCar.Name = "txtCar";
+            this.txtCar.Size = new System.Drawing.Size(40, 22);
+            this.txtCar.TabIndex = 15;
             // 
             // cbAttFue
             // 
@@ -190,7 +190,6 @@
             this.cbAttFue.Name = "cbAttFue";
             this.cbAttFue.Size = new System.Drawing.Size(121, 24);
             this.cbAttFue.TabIndex = 23;
-            this.cbAttFue.SelectedIndexChanged += new System.EventHandler(this.cbAttFue_SelectedIndexChanged);
             // 
             // cbAttInt
             // 
@@ -244,18 +243,18 @@
             this.Controls.Add(this.cbAttInt);
             this.Controls.Add(this.cbAttFue);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtDes);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtCon);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtCar);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtSab);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtInt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtFuerza);
+            this.Controls.Add(this.txtFue);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -273,19 +272,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtFuerza;
+        private System.Windows.Forms.TextBox txtFue;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtInt;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtSab;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDes;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtCon;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtCar;
         private System.Windows.Forms.ComboBox cbAttFue;
         private System.Windows.Forms.ComboBox cbAttInt;
         private System.Windows.Forms.ComboBox cbAttCar;
