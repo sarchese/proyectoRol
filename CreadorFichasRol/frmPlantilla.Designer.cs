@@ -35,22 +35,22 @@
             this.txtFue = new System.Windows.Forms.TextBox();
             this.txtBonFue = new System.Windows.Forms.TextBox();
             this.Tirada = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBonDes = new System.Windows.Forms.TextBox();
             this.txtInt = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBonInt = new System.Windows.Forms.TextBox();
             this.txtSab = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBonCar = new System.Windows.Forms.TextBox();
             this.txtDes = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtBonCon = new System.Windows.Forms.TextBox();
             this.txtCon = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBonSab = new System.Windows.Forms.TextBox();
             this.txtCar = new System.Windows.Forms.TextBox();
-            this.cbAttFue = new System.Windows.Forms.ComboBox();
-            this.cbAttInt = new System.Windows.Forms.ComboBox();
-            this.cbAttCar = new System.Windows.Forms.ComboBox();
-            this.cbAttDes = new System.Windows.Forms.ComboBox();
-            this.cbAttSab = new System.Windows.Forms.ComboBox();
-            this.cbAttCon = new System.Windows.Forms.ComboBox();
+            this.cb4 = new System.Windows.Forms.ComboBox();
+            this.cb5 = new System.Windows.Forms.ComboBox();
+            this.cb1 = new System.Windows.Forms.ComboBox();
+            this.cb3 = new System.Windows.Forms.ComboBox();
+            this.cb6 = new System.Windows.Forms.ComboBox();
+            this.cb2 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -125,14 +125,14 @@
             this.Tirada.UseVisualStyleBackColor = true;
             this.Tirada.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtBonDes
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(119, 175);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(31, 22);
-            this.textBox1.TabIndex = 10;
+            this.txtBonDes.Enabled = false;
+            this.txtBonDes.Location = new System.Drawing.Point(119, 325);
+            this.txtBonDes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBonDes.Name = "txtBonDes";
+            this.txtBonDes.Size = new System.Drawing.Size(31, 22);
+            this.txtBonDes.TabIndex = 10;
             // 
             // txtInt
             // 
@@ -143,14 +143,14 @@
             this.txtInt.Size = new System.Drawing.Size(40, 22);
             this.txtInt.TabIndex = 9;
             // 
-            // textBox4
+            // txtBonInt
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(119, 213);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(31, 22);
-            this.textBox4.TabIndex = 13;
+            this.txtBonInt.Enabled = false;
+            this.txtBonInt.Location = new System.Drawing.Point(119, 176);
+            this.txtBonInt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBonInt.Name = "txtBonInt";
+            this.txtBonInt.Size = new System.Drawing.Size(31, 22);
+            this.txtBonInt.TabIndex = 13;
             // 
             // txtSab
             // 
@@ -161,14 +161,14 @@
             this.txtSab.Size = new System.Drawing.Size(40, 22);
             this.txtSab.TabIndex = 12;
             // 
-            // textBox6
+            // txtBonCar
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(120, 324);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(31, 22);
-            this.textBox6.TabIndex = 22;
+            this.txtBonCar.Enabled = false;
+            this.txtBonCar.Location = new System.Drawing.Point(119, 250);
+            this.txtBonCar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBonCar.Name = "txtBonCar";
+            this.txtBonCar.Size = new System.Drawing.Size(31, 22);
+            this.txtBonCar.TabIndex = 22;
             // 
             // txtDes
             // 
@@ -179,14 +179,14 @@
             this.txtDes.Size = new System.Drawing.Size(40, 22);
             this.txtDes.TabIndex = 21;
             // 
-            // textBox8
+            // txtBonCon
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(119, 287);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(31, 22);
-            this.textBox8.TabIndex = 19;
+            this.txtBonCon.Enabled = false;
+            this.txtBonCon.Location = new System.Drawing.Point(119, 287);
+            this.txtBonCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBonCon.Name = "txtBonCon";
+            this.txtBonCon.Size = new System.Drawing.Size(31, 22);
+            this.txtBonCon.TabIndex = 19;
             // 
             // txtCon
             // 
@@ -197,14 +197,14 @@
             this.txtCon.Size = new System.Drawing.Size(40, 22);
             this.txtCon.TabIndex = 18;
             // 
-            // textBox10
+            // txtBonSab
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(119, 250);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(31, 22);
-            this.textBox10.TabIndex = 16;
+            this.txtBonSab.Enabled = false;
+            this.txtBonSab.Location = new System.Drawing.Point(119, 213);
+            this.txtBonSab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBonSab.Name = "txtBonSab";
+            this.txtBonSab.Size = new System.Drawing.Size(31, 22);
+            this.txtBonSab.TabIndex = 16;
             // 
             // txtCar
             // 
@@ -215,64 +215,65 @@
             this.txtCar.Size = new System.Drawing.Size(40, 22);
             this.txtCar.TabIndex = 15;
             // 
-            // cbAttFue
+            // cb4
             // 
-            this.cbAttFue.FormattingEnabled = true;
-            this.cbAttFue.Location = new System.Drawing.Point(165, 137);
-            this.cbAttFue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttFue.Name = "cbAttFue";
-            this.cbAttFue.Size = new System.Drawing.Size(121, 24);
-            this.cbAttFue.TabIndex = 23;
+            this.cb4.FormattingEnabled = true;
+            this.cb4.Location = new System.Drawing.Point(156, 250);
+            this.cb4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb4.Name = "cb4";
+            this.cb4.Size = new System.Drawing.Size(121, 24);
+            this.cb4.TabIndex = 23;
+            this.cb4.SelectedIndexChanged += new System.EventHandler(this.cb4_SelectedIndexChanged);
             // 
-            // cbAttInt
+            // cb5
             // 
-            this.cbAttInt.FormattingEnabled = true;
-            this.cbAttInt.Location = new System.Drawing.Point(165, 175);
-            this.cbAttInt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttInt.Name = "cbAttInt";
-            this.cbAttInt.Size = new System.Drawing.Size(121, 24);
-            this.cbAttInt.TabIndex = 29;
+            this.cb5.FormattingEnabled = true;
+            this.cb5.Location = new System.Drawing.Point(156, 289);
+            this.cb5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb5.Name = "cb5";
+            this.cb5.Size = new System.Drawing.Size(121, 24);
+            this.cb5.TabIndex = 29;
             // 
-            // cbAttCar
+            // cb1
             // 
-            this.cbAttCar.FormattingEnabled = true;
-            this.cbAttCar.Location = new System.Drawing.Point(165, 213);
-            this.cbAttCar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttCar.Name = "cbAttCar";
-            this.cbAttCar.Size = new System.Drawing.Size(121, 24);
-            this.cbAttCar.TabIndex = 30;
+            this.cb1.FormattingEnabled = true;
+            this.cb1.Location = new System.Drawing.Point(156, 138);
+            this.cb1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(121, 24);
+            this.cb1.TabIndex = 30;
             // 
-            // cbAttDes
+            // cb3
             // 
-            this.cbAttDes.FormattingEnabled = true;
-            this.cbAttDes.Location = new System.Drawing.Point(165, 324);
-            this.cbAttDes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttDes.Name = "cbAttDes";
-            this.cbAttDes.Size = new System.Drawing.Size(121, 24);
-            this.cbAttDes.TabIndex = 33;
+            this.cb3.FormattingEnabled = true;
+            this.cb3.Location = new System.Drawing.Point(156, 215);
+            this.cb3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb3.Name = "cb3";
+            this.cb3.Size = new System.Drawing.Size(121, 24);
+            this.cb3.TabIndex = 33;
             // 
-            // cbAttSab
+            // cb6
             // 
-            this.cbAttSab.FormattingEnabled = true;
-            this.cbAttSab.Location = new System.Drawing.Point(165, 286);
-            this.cbAttSab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttSab.Name = "cbAttSab";
-            this.cbAttSab.Size = new System.Drawing.Size(121, 24);
-            this.cbAttSab.TabIndex = 32;
+            this.cb6.FormattingEnabled = true;
+            this.cb6.Location = new System.Drawing.Point(156, 325);
+            this.cb6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb6.Name = "cb6";
+            this.cb6.Size = new System.Drawing.Size(121, 24);
+            this.cb6.TabIndex = 32;
             // 
-            // cbAttCon
+            // cb2
             // 
-            this.cbAttCon.FormattingEnabled = true;
-            this.cbAttCon.Location = new System.Drawing.Point(165, 249);
-            this.cbAttCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbAttCon.Name = "cbAttCon";
-            this.cbAttCon.Size = new System.Drawing.Size(121, 24);
-            this.cbAttCon.TabIndex = 31;
+            this.cb2.FormattingEnabled = true;
+            this.cb2.Location = new System.Drawing.Point(156, 177);
+            this.cb2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb2.Name = "cb2";
+            this.cb2.Size = new System.Drawing.Size(121, 24);
+            this.cb2.TabIndex = 31;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(365, 5);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 34;
@@ -280,7 +281,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(365, 42);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(155, 22);
             this.textBox5.TabIndex = 35;
@@ -288,7 +289,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(119, 42);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 36;
@@ -296,7 +297,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(119, 5);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(132, 22);
             this.textBox9.TabIndex = 37;
@@ -306,7 +307,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 86);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(332, 331);
             this.dataGridView1.TabIndex = 38;
@@ -330,21 +331,21 @@
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.cbAttDes);
-            this.Controls.Add(this.cbAttSab);
-            this.Controls.Add(this.cbAttCon);
-            this.Controls.Add(this.cbAttCar);
-            this.Controls.Add(this.cbAttInt);
-            this.Controls.Add(this.cbAttFue);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.cb3);
+            this.Controls.Add(this.cb6);
+            this.Controls.Add(this.cb2);
+            this.Controls.Add(this.cb1);
+            this.Controls.Add(this.cb5);
+            this.Controls.Add(this.cb4);
+            this.Controls.Add(this.txtBonCar);
             this.Controls.Add(this.txtDes);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtBonCon);
             this.Controls.Add(this.txtCon);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtBonSab);
             this.Controls.Add(this.txtCar);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtBonInt);
             this.Controls.Add(this.txtSab);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBonDes);
             this.Controls.Add(this.txtInt);
             this.Controls.Add(this.Tirada);
             this.Controls.Add(this.txtBonFue);
@@ -372,22 +373,22 @@
         private System.Windows.Forms.TextBox txtFue;
         private System.Windows.Forms.TextBox txtBonFue;
         private System.Windows.Forms.Button Tirada;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBonDes;
         private System.Windows.Forms.TextBox txtInt;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBonInt;
         private System.Windows.Forms.TextBox txtSab;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBonCar;
         private System.Windows.Forms.TextBox txtDes;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtBonCon;
         private System.Windows.Forms.TextBox txtCon;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtBonSab;
         private System.Windows.Forms.TextBox txtCar;
-        private System.Windows.Forms.ComboBox cbAttFue;
-        private System.Windows.Forms.ComboBox cbAttInt;
-        private System.Windows.Forms.ComboBox cbAttCar;
-        private System.Windows.Forms.ComboBox cbAttDes;
-        private System.Windows.Forms.ComboBox cbAttSab;
-        private System.Windows.Forms.ComboBox cbAttCon;
+        private System.Windows.Forms.ComboBox cb4;
+        private System.Windows.Forms.ComboBox cb5;
+        private System.Windows.Forms.ComboBox cb1;
+        private System.Windows.Forms.ComboBox cb3;
+        private System.Windows.Forms.ComboBox cb6;
+        private System.Windows.Forms.ComboBox cb2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox7;

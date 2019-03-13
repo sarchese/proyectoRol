@@ -12,20 +12,21 @@ namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
-        enum Atributo { Fue, Int, Con, Des, Sab, Car };   
-                int resultado;
+        enum Atributo { Fue, Int, Con, Des, Sab, Car };
+        int resultado;
         public frmPlantilla()
         {
             InitializeComponent();
-            foreach (string x in Enum.GetNames(typeof(Atributo))) {
-                cbAttCar.Items.Add(x);
-                cbAttCon.Items.Add(x);
-                cbAttDes.Items.Add(x);
-                cbAttFue.Items.Add(x);
-                cbAttInt.Items.Add(x);
-                cbAttSab.Items.Add(x);
-            } 
-        }  
+            foreach (string x in Enum.GetNames(typeof(Atributo)))
+            {
+                cb1.Items.Add(x);
+                cb2.Items.Add(x);
+                cb3.Items.Add(x);
+                cb4.Items.Add(x);
+                cb5.Items.Add(x);
+                cb6.Items.Add(x);
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -44,25 +45,55 @@ namespace CreadorFichasRol
                     Array.Reverse(dados);
                     resultado = dados[0] + dados[1] + dados[2];
                     atributos[x] = resultado;
-                } while (resultado < 8);          
-            }          
-                txtFue.Text = atributos[0].ToString();
-                txtCar.Text = atributos[1].ToString();
-                txtCon.Text = atributos[2].ToString();
-                txtDes.Text = atributos[3].ToString();
-                txtSab.Text = atributos[4].ToString();
-                txtInt.Text = atributos[5].ToString();
-            Bonificadores();
+                } while (resultado < 8);
+            }
+            txtFue.Text = atributos[0].ToString();
+            txtCar.Text = atributos[1].ToString();
+            txtCon.Text = atributos[2].ToString();
+            txtDes.Text = atributos[3].ToString();
+            txtSab.Text = atributos[4].ToString();
+            txtInt.Text = atributos[5].ToString();
+            txtBonFue.Text = Bonificadores(txtFue.Text).ToString();
+            txtBonSab.Text = Bonificadores(txtSab.Text).ToString();
+            txtBonDes.Text = Bonificadores(txtDes.Text).ToString();
+            txtBonCon.Text = Bonificadores(txtCon.Text).ToString();
+            txtBonInt.Text = Bonificadores(txtInt.Text).ToString();
+            txtBonCar.Text = Bonificadores(txtCar.Text).ToString();
         }
 
-         private void Bonificadores()
+        private int Bonificadores(string valor)
         {
-            Int32.TryParse(txtFue.Text, out int Fue);
-            if (Fue == 8 || Fue == 9)
+            int num;
+            Int32.TryParse(valor, out num);
+            if (num == 8 || num == 9)
             {
-                txtBonFue.Text = (-1).ToString();
-            }else
-            txtBonFue.Text = ((Fue - 10) / 2).ToString();
-        }   
+                return -1;
+            }
+            else
+                return (num - 10) / 2;
+        }
+
+        private void cb4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (string x in Enum.GetNames(typeof(Atributo)))
+            {
+                cb1.Items.Add(x);
+                cb2.Items.Add(x);
+                cb3.Items.Add(x);
+                cb4.Items.Add(x);
+                cb5.Items.Add(x);
+                cb6.Items.Add(x);
+            }
+            //if (cb4.Text != null)
+            //{                
+            //    cb2.Items.Remove(1);
+            //    cb3.Items.Remove(test);
+            //    cb4.Items.Remove(test);
+            //    cb5.Items.Remove(test);
+            //    cb6.Items.Remove(test);
+            //}
+
+        }
+
     }
 }
