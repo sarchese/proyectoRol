@@ -25,3 +25,12 @@ C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFic
 C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
 C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
 C:\Projekte\c#\proyectoRol.git\branches\JS\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+F:\Proyecto\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+F:\Proyecto\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+F:\Proyecto\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.cache
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb

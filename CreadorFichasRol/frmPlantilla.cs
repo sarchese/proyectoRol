@@ -13,7 +13,7 @@ namespace CreadorFichasRol
     public partial class frmPlantilla : Form
     {
         enum Atributo { Fue, Int, Con, Des, Sab, Car };   
-                int test;
+                int resultado;
         public frmPlantilla()
         {
             InitializeComponent();
@@ -25,40 +25,40 @@ namespace CreadorFichasRol
                 cbAttInt.Items.Add(x);
                 cbAttSab.Items.Add(x);
             } 
-        }
-     private int TiradaAtributos()
-        {
-            do
-            {
-                int[] array = new int[4];
-                var random = new Random();
-                //genera tantos numeros como grande sea el array
-                for (int i = 0; i < array.Length; i++)
-                {
-                    array[i] = random.Next(1, 6);
-                }
-                //ordena los numeros
-                Array.Sort(array);
-                Array.Reverse(array);
-                //suma los tres primeros
-                test = array[0] + array[1] + array[2];
-            } while (test < 8);            
-            return test;
-        }
+        }  
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] rellenarAtributos = new int[6];
-            for (int i = 0; i < rellenarAtributos.Length; i++)
-            {             
-              rellenarAtributos[i] = TiradaAtributos();                
-            }
-            txtFue.Text = TiradaAtributos().ToString();
-            txtCar.Text = rellenarAtributos[1].ToString();
-            txtCon.Text = rellenarAtributos[2].ToString();
-            txtDes.Text = rellenarAtributos[3].ToString();
-            txtSab.Text = rellenarAtributos[4].ToString();
-            txtInt.Text = rellenarAtributos[5].ToString();
-        }        
+            int[] dados = new int[4];
+            var random = new Random();
+            int[] atributos = new int[6];
+            for (int x = 0; x < atributos.Length; x++)
+            {
+                do
+                {
+                    for (int i = 0; i < dados.Length; i++)
+                    {
+                        dados[i] = random.Next(1, 7);
+                    }
+                    Array.Sort(dados);
+                    Array.Reverse(dados);
+                    resultado = dados[0] + dados[1] + dados[2];
+                    atributos[x] = resultado;
+                } while (resultado < 8);          
+            }          
+                txtFue.Text = atributos[0].ToString();
+                txtCar.Text = atributos[1].ToString();
+                txtCon.Text = atributos[2].ToString();
+                txtDes.Text = atributos[3].ToString();
+                txtSab.Text = atributos[4].ToString();
+                txtInt.Text = atributos[5].ToString();
+            Bonificadores();
+        }
+
+         private void Bonificadores()
+        {
+            Int32.TryParse(txtFue.Text, out int Fue);
+            txtBonFue.Text = ((Fue - 10) / 2).ToString();
+        }   
     }
 }
