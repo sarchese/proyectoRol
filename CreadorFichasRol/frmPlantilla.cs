@@ -27,7 +27,6 @@ namespace CreadorFichasRol
                 cb6.Items.Add(x);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int[] dados = new int[4];
@@ -60,7 +59,6 @@ namespace CreadorFichasRol
             txtBonInt.Text = Bonificadores(txtInt.Text).ToString();
             txtBonCar.Text = Bonificadores(txtCar.Text).ToString();
         }
-
         private int Bonificadores(string valor)
         {
             int num;
@@ -72,28 +70,10 @@ namespace CreadorFichasRol
             else
                 return (num - 10) / 2;
         }
-
-        private void cb4_SelectedIndexChanged(object sender, EventArgs e)
+       private Boolean ValidarEleccion()
         {
-            foreach (string x in Enum.GetNames(typeof(Atributo)))
-            {
-                cb1.Items.Add(x);
-                cb2.Items.Add(x);
-                cb3.Items.Add(x);
-                cb4.Items.Add(x);
-                cb5.Items.Add(x);
-                cb6.Items.Add(x);
-            }
-            //if (cb4.Text != null)
-            //{                
-            //    cb2.Items.Remove(1);
-            //    cb3.Items.Remove(test);
-            //    cb4.Items.Remove(test);
-            //    cb5.Items.Remove(test);
-            //    cb6.Items.Remove(test);
-            //}
-
+            
+            return false;
         }
-
     }
 }

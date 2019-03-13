@@ -223,7 +223,6 @@
             this.cb4.Name = "cb4";
             this.cb4.Size = new System.Drawing.Size(121, 24);
             this.cb4.TabIndex = 23;
-            this.cb4.SelectedIndexChanged += new System.EventHandler(this.cb4_SelectedIndexChanged);
             // 
             // cb5
             // 
@@ -242,6 +241,7 @@
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(121, 24);
             this.cb1.TabIndex = 30;
+            
             // 
             // cb3
             // 
