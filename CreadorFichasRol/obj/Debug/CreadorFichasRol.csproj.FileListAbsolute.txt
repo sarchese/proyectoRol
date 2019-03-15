@@ -44,3 +44,4 @@ C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.R
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources

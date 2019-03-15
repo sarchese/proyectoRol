@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonificadores.cs" />
+    <Compile Include="frmObtenerAtributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObtenerAtributos.Designer.cs">
+      <DependentUpon>frmObtenerAtributos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPlantilla.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmObtenerAtributos.resx">
+      <DependentUpon>frmObtenerAtributos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPlantilla.resx">
       <DependentUpon>frmPlantilla.cs</DependentUpon>
     </EmbeddedResource>
