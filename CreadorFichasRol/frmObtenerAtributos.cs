@@ -12,15 +12,12 @@ namespace CreadorFichasRol
 {
     public partial class frmObtenerAtributos : Form
     {
-
-        enum Atributo { Fue, Int, Con, Des, Sab, Car };
-        
+        enum Atributo { Fue, Sab, Con, Des, Car, Int };        
         public IDictionary<string, string> dic = new Dictionary<string, string>();
         public int resultado;
         public frmObtenerAtributos()
         {
             InitializeComponent();
-            
             foreach (string x in Enum.GetNames(typeof(Atributo)))
             {
                 cb1.Items.Add(x);                
@@ -28,14 +25,9 @@ namespace CreadorFichasRol
                 cb3.Items.Add(x);               
                 cb4.Items.Add(x);               
                 cb5.Items.Add(x);              
-                cb6.Items.Add(x);               
+                cb6.Items.Add(x);                 
             }
-            //cb1.SelectionStart = 0;
-            //cb2.SelectedValue = Atributo.Sab;
-            //cb3.SelectedValue = Atributo.Con;
-            //cb4.SelectedValue = Atributo.Des;
-            //cb5.SelectedValue = Atributo.Car;
-            //cb6.SelectedValue = Atributo.Int;
+            SelectionCBStart();
         }
         private void Tirada_Click(object sender, EventArgs e)
         {
@@ -85,7 +77,14 @@ namespace CreadorFichasRol
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
-
-     
+        private void SelectionCBStart()
+        {
+            cb1.SelectedItem = Atributo.Fue.ToString();
+            cb2.SelectedItem = Atributo.Sab.ToString();
+            cb3.SelectedItem = Atributo.Con.ToString();
+            cb4.SelectedItem = Atributo.Des.ToString();
+            cb5.SelectedItem = Atributo.Car.ToString();
+            cb6.SelectedItem = Atributo.Int.ToString();
+        }
     }
 }

@@ -45,3 +45,4 @@ C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.Gener
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources
+F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources
