@@ -12,13 +12,11 @@ using System.Xml;
 namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
-    {
-       
+    {       
         int resultado;
         public frmPlantilla()
         {
-            InitializeComponent();
-            
+            InitializeComponent();            
         }
         private void button1_Click(object sender, EventArgs e)
         {
