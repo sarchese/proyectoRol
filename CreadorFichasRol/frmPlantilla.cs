@@ -39,40 +39,8 @@ namespace CreadorFichasRol
                 txtBonInt.Text = bon.GetBonificador(txtInt.Text).ToString();
                 txtBonCon.Text = bon.GetBonificador(txtCon.Text).ToString();
                 txtBonDes.Text = bon.GetBonificador(txtDes.Text).ToString();
-            }           
-                   
-
-            //int[] dados = new int[4];
-            //var random = new Random();
-            //int[] atributos = new int[6];
-            //for (int x = 0; x < atributos.Length; x++)
-            //{
-            //    do
-            //    {
-            //        for (int i = 0; i < dados.Length; i++)
-            //        {
-            //            dados[i] = random.Next(1, 7);
-            //        }
-            //        Array.Sort(dados);
-            //        Array.Reverse(dados);
-            //        resultado = dados[0] + dados[1] + dados[2];
-            //        atributos[x] = resultado;
-            //    } while (resultado < 8);
-            //}
-            //txt1.Text = atributos[0].ToString();
-            //txt4.Text = atributos[1].ToString();
-            //txt5.Text = atributos[2].ToString();
-            //txt6.Text = atributos[3].ToString();
-            //txt3.Text = atributos[4].ToString();
-            //txt2.Text = atributos[5].ToString();
-            //txtBon1.Text = Bonificadores(txt1.Text).ToString();
-            //txtBon3.Text = Bonificadores(txt3.Text).ToString();
-            //txtBon6.Text = Bonificadores(txt6.Text).ToString();
-            //txtBon5.Text = Bonificadores(txt5.Text).ToString();
-            //txtBon2.Text = Bonificadores(txt2.Text).ToString();
-            //txtBon4.Text = Bonificadores(txt4.Text).ToString();
-        }
-       
+            }  
+        }       
 
         private void Guardar_Click(object sender, EventArgs e)
         {

@@ -228,7 +228,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(365, 5);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 34;
@@ -236,7 +236,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(365, 42);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 22);
             this.textBox5.TabIndex = 35;
@@ -244,7 +244,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(119, 42);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 36;
@@ -252,7 +252,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(119, 5);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 37;
@@ -260,7 +260,7 @@
             // txtExp
             // 
             this.txtExp.Location = new System.Drawing.Point(605, 9);
-            this.txtExp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtExp.Margin = new System.Windows.Forms.Padding(4);
             this.txtExp.Name = "txtExp";
             this.txtExp.Size = new System.Drawing.Size(132, 22);
             this.txtExp.TabIndex = 40;
@@ -483,8 +483,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFue;
         private System.Windows.Forms.TextBox txtBonFue;
         private System.Windows.Forms.Button Tirada;
@@ -498,9 +496,6 @@
         private System.Windows.Forms.TextBox txtCar;
         private System.Windows.Forms.TextBox txtBonCon;
         private System.Windows.Forms.TextBox txtDes;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox txtExp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblNivel;
@@ -511,7 +506,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button cmdSave;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblFue;
         private System.Windows.Forms.Label lblSab;
         private System.Windows.Forms.Label lblCon;
@@ -519,6 +513,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblInt;
         public System.Windows.Forms.TextBox txtName;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

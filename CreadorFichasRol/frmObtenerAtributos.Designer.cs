@@ -217,20 +217,20 @@
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox cb3;
-        private System.Windows.Forms.ComboBox cb6;
-        private System.Windows.Forms.ComboBox cb2;
-        private System.Windows.Forms.ComboBox cb1;
-        private System.Windows.Forms.ComboBox cb5;
-        private System.Windows.Forms.ComboBox cb4;
-        private System.Windows.Forms.TextBox txt6;
-        private System.Windows.Forms.TextBox txt5;
-        private System.Windows.Forms.TextBox txt4;
-        private System.Windows.Forms.TextBox txt3;
-        private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.Button Tirada;
-        private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button cmdSave;
+        public System.Windows.Forms.ComboBox cb3;
+        public System.Windows.Forms.ComboBox cb6;
+        public System.Windows.Forms.ComboBox cb2;
+        public System.Windows.Forms.ComboBox cb1;
+        public System.Windows.Forms.ComboBox cb5;
+        public System.Windows.Forms.ComboBox cb4;
+        public System.Windows.Forms.TextBox txt6;
+        public System.Windows.Forms.TextBox txt5;
+        public System.Windows.Forms.TextBox txt4;
+        public System.Windows.Forms.TextBox txt3;
+        public System.Windows.Forms.TextBox txt2;
+        public System.Windows.Forms.TextBox txt1;
     }
 }
