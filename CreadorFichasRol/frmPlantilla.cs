@@ -12,8 +12,7 @@ using System.Xml;
 namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
-    {       
-        int resultado;
+    {
         public frmPlantilla()
         {
             InitializeComponent();
@@ -23,7 +22,7 @@ namespace CreadorFichasRol
         {
             using (frmObtenerAtributos frm = new frmObtenerAtributos())
             {
-                frm.ShowDialog();                          
+                frm.ShowDialog();
                 if (frm.DialogResult == DialogResult.OK)
                 {
                     txtFue.Text = frm.dic["Fue"];
@@ -40,12 +39,12 @@ namespace CreadorFichasRol
                 txtBonInt.Text = bon.GetBonificador(txtInt.Text).ToString();
                 txtBonCon.Text = bon.GetBonificador(txtCon.Text).ToString();
                 txtBonDes.Text = bon.GetBonificador(txtDes.Text).ToString();
-            }  
-        }       
+            }
+        }
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-                        XmlWriter w = XmlWriter.Create("PJ_"+ txtName.Text+".xml");
+            XmlWriter w = XmlWriter.Create("PJ_" + txtName.Text + ".xml");
             w.WriteStartElement("PJ_" + txtName.Text);
             w.WriteElementString(txtDes.Name, txtDes.Text);
             w.WriteElementString(txtFue.Name, txtFue.Text);
@@ -59,7 +58,7 @@ namespace CreadorFichasRol
             w.WriteElementString(txtBonDes.Name, txtBonDes.Text);
             w.WriteElementString(txtBonCar.Name, txtBonCar.Text);
             w.WriteElementString(txtBonInt.Name, txtBonDes.Text);
-          
+
             w.WriteEndElement();
             w.Close();
         }

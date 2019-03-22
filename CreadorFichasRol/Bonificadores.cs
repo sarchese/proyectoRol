@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace CreadorFichasRol
 {
     public class Bonificadores
-    {
-        private IDictionary<string, string> dic;        
+    {           
         int num;
         public int GetBonificador(string valor)
         {
