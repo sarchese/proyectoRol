@@ -232,6 +232,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(132, 22);
             this.textBox3.TabIndex = 34;
+            this.textBox3.Tag = "Transfondo";
             // 
             // textBox5
             // 
@@ -240,6 +241,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(132, 22);
             this.textBox5.TabIndex = 35;
+            this.textBox5.Tag = "Alineamiento";
             // 
             // textBox7
             // 
@@ -248,6 +250,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(132, 22);
             this.textBox7.TabIndex = 36;
+            this.textBox7.Tag = "Clase del PJ";
             // 
             // txtName
             // 
@@ -256,6 +259,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 37;
+            this.txtName.Tag = "Nombre del PJ";
             // 
             // txtExp
             // 
@@ -264,6 +268,7 @@
             this.txtExp.Name = "txtExp";
             this.txtExp.Size = new System.Drawing.Size(132, 22);
             this.txtExp.TabIndex = 40;
+            this.txtExp.Tag = "";
             // 
             // label6
             // 
@@ -471,6 +476,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmPlantilla";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "D&D 5";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

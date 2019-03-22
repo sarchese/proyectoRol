@@ -28,9 +28,9 @@ namespace CreadorFichasRol
 
         internal int ValidarAtributos(string[] arrayAtributos)
         {
-            int count = 0;            
+            int count = 0;
             //Con este array miro que no esten vacios
-            for (int i=0; i<= arrayAtributos.Length-1;i++)
+            for (int i = 0; i <= arrayAtributos.Length - 1; i++)
             {
                 if (arrayAtributos[i] == "")
                 {
@@ -39,13 +39,12 @@ namespace CreadorFichasRol
             }
             var groups = arrayAtributos.GroupBy(x => x);
             var largest = groups.OrderByDescending(x => x.Count()).First();
-           
+
             if (largest.Count() != 1)
             {
                 count += 1;
             }
-           
-            //tengo que mirar que no esten repetidos
+            
             return count;
         }
     }

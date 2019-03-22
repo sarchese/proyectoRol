@@ -68,11 +68,11 @@ namespace CreadorFichasRol
         }
         private void cmdSave_Click(object sender, EventArgs e)
         {
-            string[] aComboBox = { cb1.Text, cb2.Text, cb3.Text, cb4.Text, cb5.Text, cb6.Text };
-                      
-            Validator validator = new Validator();
-            validator.ValidarAtributos(aComboBox);
-
+            ComboBox[] aComboBox = { cb1, cb2, cb3, cb4, cb5, cb6};
+            TextBox[] aTextBox = {txt1, txt2, txt3, txt4, txt5, txt6 };
+            frmValidator validator = new frmValidator();
+            if (validator.ValidarAtributos(aComboBox) == false) { return; }
+            if (validator.ValidarValoresAtributos(aTextBox) == false) { return; }                        
             dic.Add(cb1.Text, txt1.Text);
             dic.Add(cb2.Text, txt2.Text);
             dic.Add(cb3.Text, txt3.Text);

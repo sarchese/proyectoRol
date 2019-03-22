@@ -55,6 +55,7 @@
             this.cb3.Name = "cb3";
             this.cb3.Size = new System.Drawing.Size(121, 24);
             this.cb3.TabIndex = 69;
+            this.cb3.Tag = "Atributo 3";
             // 
             // cb6
             // 
@@ -64,6 +65,7 @@
             this.cb6.Name = "cb6";
             this.cb6.Size = new System.Drawing.Size(121, 24);
             this.cb6.TabIndex = 68;
+            this.cb6.Tag = "Atributo 6";
             // 
             // cb2
             // 
@@ -73,6 +75,7 @@
             this.cb2.Name = "cb2";
             this.cb2.Size = new System.Drawing.Size(121, 24);
             this.cb2.TabIndex = 67;
+            this.cb2.Tag = "Atributo 2";
             // 
             // cb1
             // 
@@ -82,6 +85,7 @@
             this.cb1.Name = "cb1";
             this.cb1.Size = new System.Drawing.Size(121, 24);
             this.cb1.TabIndex = 66;
+            this.cb1.Tag = "Atributo 1";
             // 
             // cb5
             // 
@@ -91,6 +95,7 @@
             this.cb5.Name = "cb5";
             this.cb5.Size = new System.Drawing.Size(121, 24);
             this.cb5.TabIndex = 65;
+            this.cb5.Tag = "Atributo 5";
             // 
             // cb4
             // 
@@ -100,6 +105,7 @@
             this.cb4.Name = "cb4";
             this.cb4.Size = new System.Drawing.Size(121, 24);
             this.cb4.TabIndex = 64;
+            this.cb4.Tag = "Atributo 4";
             // 
             // txt6
             // 
@@ -165,6 +171,7 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(40, 22);
             this.txt1.TabIndex = 51;
+            this.txt1.Tag = "Esto es un test";
             // 
             // groupBox1
             // 

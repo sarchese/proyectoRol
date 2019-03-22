@@ -16,13 +16,14 @@ namespace CreadorFichasRol
         int resultado;
         public frmPlantilla()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            //MessageBox.Show(txtName.Tag.ToString());
         }
         private void button1_Click(object sender, EventArgs e)
         {
             using (frmObtenerAtributos frm = new frmObtenerAtributos())
             {
-                frm.ShowDialog();                
+                frm.ShowDialog();                          
                 if (frm.DialogResult == DialogResult.OK)
                 {
                     txtFue.Text = frm.dic["Fue"];
@@ -44,7 +45,7 @@ namespace CreadorFichasRol
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-            XmlWriter w = XmlWriter.Create("PJ_"+ txtName.Text+".xml");
+                        XmlWriter w = XmlWriter.Create("PJ_"+ txtName.Text+".xml");
             w.WriteStartElement("PJ_" + txtName.Text);
             w.WriteElementString(txtDes.Name, txtDes.Text);
             w.WriteElementString(txtFue.Name, txtFue.Text);
