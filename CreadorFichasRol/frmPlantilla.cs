@@ -63,6 +63,8 @@ namespace CreadorFichasRol
             w.Close();
         }
 
+      
+
         //private void txtExp_TextChanged(object sender, EventArgs e)
         //{
         //    string oldValueExp = lblNivel.Text;
