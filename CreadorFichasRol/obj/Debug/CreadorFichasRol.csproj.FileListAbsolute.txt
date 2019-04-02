@@ -34,3 +34,13 @@ F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
 F:\Proyecto\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojAssemblyReference.cache
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.cache
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-master\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb

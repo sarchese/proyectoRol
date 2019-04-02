@@ -18,12 +18,12 @@ namespace CreadorFichasRol
         {
             InitializeComponent();
             foreach (string x in Enum.GetNames(typeof(Atributo))) {
-                cbAttCar.Items.Add(x);
-                cbAttCon.Items.Add(x);
-                cbAttDes.Items.Add(x);
                 cbAttFue.Items.Add(x);
                 cbAttInt.Items.Add(x);
+                cbAttCon.Items.Add(x);
+                cbAttDes.Items.Add(x);
                 cbAttSab.Items.Add(x);
+                cbAttCar.Items.Add(x);
             } 
         }  
 
@@ -47,18 +47,56 @@ namespace CreadorFichasRol
                 } while (resultado < 8);          
             }          
                 txtFue.Text = atributos[0].ToString();
-                txtCar.Text = atributos[1].ToString();
+                txtInt.Text = atributos[1].ToString();
                 txtCon.Text = atributos[2].ToString();
                 txtDes.Text = atributos[3].ToString();
                 txtSab.Text = atributos[4].ToString();
-                txtInt.Text = atributos[5].ToString();
-            Bonificadores();
+                txtCar.Text = atributos[5].ToString();
+            int [] bonificadores = Bonificadores(atributos);
+            Bonificadorresultado(bonificadores);
+
         }
 
-         private void Bonificadores()
+        private int[] Bonificadores(int[] atributos)
         {
-            Int32.TryParse(txtFue.Text, out int Fue);
-            txtBonFue.Text = ((Fue - 10) / 2).ToString();
-        }   
+            //Int32.TryParse(txtFue.Text, out int Fue);
+            //txtBonFue.Text = ((Fue - 10) / 2).ToString();
+            int[] bonificadores = new int[6];
+            int indice = 0;
+            foreach (int element in atributos) {
+                int numbase = 5;
+                int bono = 0;
+                for ( int i = 0; i < element; i++) {
+                    if (i % 2 == 0) {
+                        numbase++;
+                    }
+                }
+                if (element % 2 == 0 || element == 0)
+                {
+                    bonificadores[indice] = element - numbase;
+                    indice++;
+                }
+                else {
+                    bonificadores[indice] = element - numbase;
+                    indice++;
+
+                }
+                //Console.WriteLine(element + " tiene el bonificador :" +bono);
+            }
+            return bonificadores;
+        }
+        private void Bonificadorresultado(int [] bonos) {
+            txtBonFue.Text = bonos[0].ToString();
+            txtBonInt.Text = bonos[1].ToString();
+            txtBonCon.Text = bonos[2].ToString();
+            txtBonDes.Text = bonos[3].ToString();
+            txtBonSab.Text = bonos[4].ToString();
+            txtBonCar.Text = bonos[5].ToString();
+        }
+
+        private void txtCar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
