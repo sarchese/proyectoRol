@@ -7,96 +7,129 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Runtime.InteropServices;
 
 namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
-        enum Atributo { Fue, Int, Con, Des, Sab, Car };   
-                int resultado;
         public frmPlantilla()
         {
             InitializeComponent();
-            foreach (string x in Enum.GetNames(typeof(Atributo))) {
-                cbAttFue.Items.Add(x);
-                cbAttInt.Items.Add(x);
-                cbAttCon.Items.Add(x);
-                cbAttDes.Items.Add(x);
-                cbAttSab.Items.Add(x);
-                cbAttCar.Items.Add(x);
-            } 
-        }  
-
+            //MessageBox.Show(txtName.Tag.ToString());
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] dados = new int[4];
-            var random = new Random();
-            int[] atributos = new int[6];
-            for (int x = 0; x < atributos.Length; x++)
+            using (frmObtenerAtributos frm = new frmObtenerAtributos())
             {
-                do
+                frm.ShowDialog();
+                if (frm.DialogResult == DialogResult.OK)
                 {
-                    for (int i = 0; i < dados.Length; i++)
-                    {
-                        dados[i] = random.Next(1, 7);
-                    }
-                    Array.Sort(dados);
-                    Array.Reverse(dados);
-                    resultado = dados[0] + dados[1] + dados[2];
-                    atributos[x] = resultado;
-                } while (resultado < 8);          
-            }          
-                txtFue.Text = atributos[0].ToString();
-                txtInt.Text = atributos[1].ToString();
-                txtCon.Text = atributos[2].ToString();
-                txtDes.Text = atributos[3].ToString();
-                txtSab.Text = atributos[4].ToString();
-                txtCar.Text = atributos[5].ToString();
-            int [] bonificadores = Bonificadores(atributos);
-            Bonificadorresultado(bonificadores);
-
-        }
-
-        private int[] Bonificadores(int[] atributos)
-        {
-            //Int32.TryParse(txtFue.Text, out int Fue);
-            //txtBonFue.Text = ((Fue - 10) / 2).ToString();
-            int[] bonificadores = new int[6];
-            int indice = 0;
-            foreach (int element in atributos) {
-                int numbase = 5;
-                int bono = 0;
-                for ( int i = 0; i < element; i++) {
-                    if (i % 2 == 0) {
-                        numbase++;
-                    }
+                    txtFue.Text = frm.dic["Fue"];
+                    txtInt.Text = frm.dic["Int"];
+                    txtSab.Text = frm.dic["Sab"];
+                    txtCon.Text = frm.dic["Con"];
+                    txtCar.Text = frm.dic["Car"];
+                    txtDes.Text = frm.dic["Des"];
                 }
-                if (element % 2 == 0 || element == 0)
-                {
-                    bonificadores[indice] = element - numbase;
-                    indice++;
-                }
-                else {
-                    bonificadores[indice] = element - numbase;
-                    indice++;
-
-                }
-                //Console.WriteLine(element + " tiene el bonificador :" +bono);
+                Bonificadores bon = new Bonificadores();
+                txtBonFue.Text = bon.GetBonificador(txtFue.Text).ToString();
+                txtBonCar.Text = bon.GetBonificador(txtCar.Text).ToString();
+                txtBonSab.Text = bon.GetBonificador(txtSab.Text).ToString();
+                txtBonInt.Text = bon.GetBonificador(txtInt.Text).ToString();
+                txtBonCon.Text = bon.GetBonificador(txtCon.Text).ToString();
+                txtBonDes.Text = bon.GetBonificador(txtDes.Text).ToString();
             }
-            return bonificadores;
-        }
-        private void Bonificadorresultado(int [] bonos) {
-            txtBonFue.Text = bonos[0].ToString();
-            txtBonInt.Text = bonos[1].ToString();
-            txtBonCon.Text = bonos[2].ToString();
-            txtBonDes.Text = bonos[3].ToString();
-            txtBonSab.Text = bonos[4].ToString();
-            txtBonCar.Text = bonos[5].ToString();
         }
 
-        private void txtCar_TextChanged(object sender, EventArgs e)
+        private void Guardar_Click(object sender, EventArgs e)
         {
+            XmlWriter w = XmlWriter.Create("PJ_" + txtName.Text + ".xml");
+            w.WriteStartElement("PJ_" + txtName.Text);
+            w.WriteElementString(txtDes.Name, txtDes.Text);
+            w.WriteElementString(txtFue.Name, txtFue.Text);
+            w.WriteElementString(txtInt.Name, txtInt.Text);
+            w.WriteElementString(txtSab.Name, txtSab.Text);
+            w.WriteElementString(txtCar.Name, txtCar.Text);
+            w.WriteElementString(txtCon.Name, txtCon.Text);
+            w.WriteElementString(txtBonFue.Name, txtBonFue.Text);
+            w.WriteElementString(txtBonSab.Name, txtBonSab.Text);
+            w.WriteElementString(txtBonCon.Name, txtBonCon.Text);
+            w.WriteElementString(txtBonDes.Name, txtBonDes.Text);
+            w.WriteElementString(txtBonCar.Name, txtBonCar.Text);
+            w.WriteElementString(txtBonInt.Name, txtBonDes.Text);
 
+            w.WriteEndElement();
+            w.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMax.Visible = false;
+            btnMin.Visible = true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnMin.Visible = false;
+            btnMax.Visible = true;
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void topBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+
+        //private void txtExp_TextChanged(object sender, EventArgs e)
+        //{
+        //    string oldValueExp = lblNivel.Text;
+        //    //Int32.TryParse(lblNivel.Text, out oldValueExp);
+        //    if (txtExp.Text == "300")
+        //    {
+        //        lblNivel.Text = "2";
+        //    }
+        //    if (oldValueExp != lblNivel.Text)
+        //    {
+        //        button1.Enabled = true;
+        //        button2.Enabled = true;
+        //        button3.Enabled = true;
+        //        button4.Enabled = true;
+        //        button5.Enabled = true;
+        //        button6.Enabled = true;
+        //    }
+        //    if (txtExp.Text == "")
+        //    {
+        //        MessageBox.Show("No puede estar vacio.");
+        //        lblNivel.Text = oldValueExp;
+        //        button1.Enabled = false;
+        //        button2.Enabled = false;
+        //        button3.Enabled = false;
+        //        button4.Enabled = false;
+        //        button5.Enabled = false;
+        //        button6.Enabled = false;
+        //    }
+        //}
+
     }
 }

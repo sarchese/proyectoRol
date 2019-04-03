@@ -117,20 +117,33 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="maximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maximize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Grey_close_x.svg (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Grey_close_x.svg (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="D&amp;D Splat Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\D&amp;D Splat Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AABKaIQAWWx8ADprmgAybKIAPm6aAD1umwCAenIAeH1uAJhqygA0eMMAkIV9AJOGegC2crIAX4KdAIeH
+        fwCGiYAAOX3FADl9xgAyfckAlYqBAIqOhAC7f7cArn3OAFOM0QC9iNMAT5TZAL6L0wDDitkAyZDJAICk
+        tQASm/8AHpv/ABac/wAXnP8AHpz/AB+c/wAanf8AJZ//ACmm/wB/q9EATKrqACmo/wAtqP8A1abSALm2
+        rwBPsesAMrn/AD25/wA+uf8AQ7z/AJa/3gBfu/8A6LnoAE7N/wDT0MsATs7/AFHP/wCQ1f0Amdv5AIji
+        /wC54/QAn+b/APLw6wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAPz8/Pz8/Pz8/Pz8/Pz8/PwEAGRc/Pz8/Pz8/Pz8/Pz8NHTkzAj8/Pz8/Pz8/Pz8/KD06JSEE
+        Pz8/Pz8/Pz8/Py07MSYfJAQ/Pz8/Pz8/Pz8/CTUvKiMkBD8/Pz8/Pz8/Pz8QODAqIyQEPz8/Pz8/Pz8/
+        PxE4MCojJAQ/Pz8/Pz8/Pz8/ETgwKiMkBT8/Pz8/Pz8/Pz8RODAqIiADPz8/Pz8/Pz8/PxE4LykeJwY/
+        Pz8/Pz8/Pz8/ETcuMhMsBz8/Pz8/Pz8/Pz8SPAo2FAwIPz8/Pz8/Pz8/Pws+DxwVFj8/Pz8/Pz8/Pz8/
+        DjQrGj8/Pz8/Pz8/Pz8/Pz8bGD8/P///AAAP/wAAB/8AAAP/AAAB/wAAgP8AAMB/AADgPwAA8B8AAPgP
+        AAD8BwAA/gMAAP8BAAD/gQAA/8MAAP/nAAA=
+</value>
   </data>
 </root>
