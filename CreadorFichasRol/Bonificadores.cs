@@ -8,16 +8,21 @@ namespace CreadorFichasRol
 {
     public class Bonificadores
     {           
-        int num;
-        public int GetBonificador(string valor)
+             public int GetBonificador(string valor)
         {
+            int num;
+            int numbase = 5;
+            int bono;
             Int32.TryParse(valor, out num);
-            if (num == 8 || num == 9)
+            for (int i = 0; i < num; i++)
             {
-                return -1;
+                if (i % 2 == 0)
+                {
+                    numbase++;
+                }
             }
-            else
-                return (num - 10) / 2;
+           bono = num - numbase;
+            return bono;
         }
     }
 }

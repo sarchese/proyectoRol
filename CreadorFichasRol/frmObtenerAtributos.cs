@@ -55,28 +55,7 @@ namespace CreadorFichasRol
             txt3.Text = atributos[4].ToString();
             txt2.Text = atributos[5].ToString();
         }
-        private int Bonificadores(string valor)
-        {
-            int num;
-            int numbase = 5;
-            int bono;
-            Int32.TryParse(valor, out num);
-            for (int i = 0; i < num; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    numbase++;
-                }
-            }
-            bono = num - numbase;
-            /*if (num == 8 || num == 9)
-            {
-                return -1;
-            }
-            else
-                return (num - 10) / 2;*/
-            return bono;
-        }
+     
         private void cmdSave_Click(object sender, EventArgs e)
         {
             ComboBox[] aComboBox = { cb1, cb2, cb3, cb4, cb5, cb6};
