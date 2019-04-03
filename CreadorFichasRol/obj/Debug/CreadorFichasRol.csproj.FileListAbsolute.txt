@@ -10,3 +10,15 @@ C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-JS\CreadorFichas
 C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
 C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
 C:\Users\Maet\Documents\Visual Studio 2017\Projects\proyectoRol-JS\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
+F:\Projekt\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+F:\Projekt\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+F:\Projekt\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojAssemblyReference.cache
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmValidator.resources
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.cache
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+F:\Projekt\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
