@@ -1,0 +1,9 @@
+F:\Proyecto\CreadorFichasRol\bin\Release\CreadorFichasRol.exe.config
+F:\Proyecto\CreadorFichasRol\bin\Release\CreadorFichasRol.exe
+F:\Proyecto\CreadorFichasRol\bin\Release\CreadorFichasRol.pdb
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.frmPlantilla.resources
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.Properties.Resources.resources
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.csproj.GenerateResource.cache
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.csproj.CoreCompileInputs.cache
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.exe
+F:\Proyecto\CreadorFichasRol\obj\Release\CreadorFichasRol.pdb
