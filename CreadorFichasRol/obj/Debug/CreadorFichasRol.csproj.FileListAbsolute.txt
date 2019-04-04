@@ -19,3 +19,15 @@ C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmValidator.resources
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.Cache
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe.config
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojAssemblyReference.cache
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmValidator.resources
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.Properties.Resources.resources
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.GenerateResource.cache
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csproj.CoreCompileInputs.cache
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
+F:\Nueva carpeta\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb

@@ -39,7 +39,7 @@
             this.txtExp = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblNivel = new System.Windows.Forms.Label();
-            this.cmdSave = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.topBar = new System.Windows.Forms.Panel();
             this.cmdMin = new System.Windows.Forms.PictureBox();
             this.btnBar = new System.Windows.Forms.PictureBox();
@@ -89,7 +89,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lblInt = new System.Windows.Forms.Label();
-            this.Tirada = new System.Windows.Forms.Button();
+            this.btnTirada = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.txtFue = new System.Windows.Forms.TextBox();
             this.txtBonFue = new System.Windows.Forms.TextBox();
@@ -181,7 +181,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 20);
             this.txtName.TabIndex = 37;
-            this.txtName.Tag = "Nombre del PJ";
+            this.txtName.Tag = "Nombre";
             // 
             // txtExp
             // 
@@ -189,7 +189,7 @@
             this.txtExp.Name = "txtExp";
             this.txtExp.Size = new System.Drawing.Size(100, 20);
             this.txtExp.TabIndex = 40;
-            this.txtExp.Tag = "";
+            this.txtExp.Tag = "Exp";
             // 
             // label6
             // 
@@ -211,16 +211,16 @@
             this.lblNivel.TabIndex = 42;
             this.lblNivel.Text = "1";
             // 
-            // cmdSave
+            // btnSave
             // 
-            this.cmdSave.Location = new System.Drawing.Point(1053, 596);
-            this.cmdSave.Margin = new System.Windows.Forms.Padding(2);
-            this.cmdSave.Name = "cmdSave";
-            this.cmdSave.Size = new System.Drawing.Size(97, 26);
-            this.cmdSave.TabIndex = 49;
-            this.cmdSave.Text = "Guardar";
-            this.cmdSave.UseVisualStyleBackColor = true;
-            this.cmdSave.Click += new System.EventHandler(this.Guardar_Click);
+            this.btnSave.Location = new System.Drawing.Point(1053, 596);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(97, 26);
+            this.btnSave.TabIndex = 49;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.Guardar_Click);
             // 
             // topBar
             // 
@@ -238,13 +238,13 @@
             this.topBar.TabIndex = 61;
             this.topBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.topBar_MouseDown);
             // 
-            // btnMin
+            // cmdMin
             // 
             this.cmdMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMin.Image = global::CreadorFichasRol.Properties.Resources.minimize;
             this.cmdMin.Location = new System.Drawing.Point(1075, 0);
-            this.cmdMin.Name = "btnMin";
+            this.cmdMin.Name = "cmdMin";
             this.cmdMin.Size = new System.Drawing.Size(35, 35);
             this.cmdMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMin.TabIndex = 63;
@@ -265,13 +265,13 @@
             this.btnBar.TabStop = false;
             this.btnBar.Click += new System.EventHandler(this.cmdBar_Click);
             // 
-            // btnMax
+            // cmdMax
             // 
             this.cmdMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMax.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMax.Image = global::CreadorFichasRol.Properties.Resources.maximize;
             this.cmdMax.Location = new System.Drawing.Point(1075, 0);
-            this.cmdMax.Name = "btnMax";
+            this.cmdMax.Name = "cmdMax";
             this.cmdMax.Size = new System.Drawing.Size(35, 35);
             this.cmdMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMax.TabIndex = 63;
@@ -393,6 +393,7 @@
             this.cbRaza.Name = "cbRaza";
             this.cbRaza.Size = new System.Drawing.Size(115, 21);
             this.cbRaza.TabIndex = 44;
+            this.cbRaza.Tag = "Raza";
             // 
             // label22
             // 
@@ -680,7 +681,7 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.lblInt);
-            this.groupBox1.Controls.Add(this.Tirada);
+            this.groupBox1.Controls.Add(this.btnTirada);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txtFue);
             this.groupBox1.Controls.Add(this.txtBonFue);
@@ -698,7 +699,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(173, 253);
+            this.groupBox1.Size = new System.Drawing.Size(177, 253);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Atributos";
@@ -762,9 +763,9 @@
             this.lblCon.Location = new System.Drawing.Point(108, 89);
             this.lblCon.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCon.Name = "lblCon";
-            this.lblCon.Size = new System.Drawing.Size(56, 13);
+            this.lblCon.Size = new System.Drawing.Size(65, 13);
             this.lblCon.TabIndex = 51;
-            this.lblCon.Text = "Contitición";
+            this.lblCon.Text = "Constitución";
             // 
             // button3
             // 
@@ -818,16 +819,16 @@
             this.lblInt.TabIndex = 54;
             this.lblInt.Text = "Inteligencia";
             // 
-            // Tirada
+            // btnTirada
             // 
-            this.Tirada.Location = new System.Drawing.Point(23, 210);
-            this.Tirada.Margin = new System.Windows.Forms.Padding(2);
-            this.Tirada.Name = "Tirada";
-            this.Tirada.Size = new System.Drawing.Size(97, 26);
-            this.Tirada.TabIndex = 7;
-            this.Tirada.Text = "Tirada";
-            this.Tirada.UseVisualStyleBackColor = true;
-            this.Tirada.Click += new System.EventHandler(this.Tirada_Click_1);
+            this.btnTirada.Location = new System.Drawing.Point(23, 210);
+            this.btnTirada.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTirada.Name = "btnTirada";
+            this.btnTirada.Size = new System.Drawing.Size(97, 26);
+            this.btnTirada.TabIndex = 7;
+            this.btnTirada.Text = "Tirada";
+            this.btnTirada.UseVisualStyleBackColor = true;
+            this.btnTirada.Click += new System.EventHandler(this.Tirada_Click_1);
             // 
             // button1
             // 
@@ -848,6 +849,7 @@
             this.txtFue.Name = "txtFue";
             this.txtFue.Size = new System.Drawing.Size(31, 20);
             this.txtFue.TabIndex = 5;
+            this.txtFue.Tag = "Fuerza";
             // 
             // txtBonFue
             // 
@@ -866,6 +868,7 @@
             this.txtSab.Name = "txtSab";
             this.txtSab.Size = new System.Drawing.Size(31, 20);
             this.txtSab.TabIndex = 9;
+            this.txtSab.Tag = "Sabiduria";
             // 
             // txtBonInt
             // 
@@ -893,6 +896,7 @@
             this.txtCon.Name = "txtCon";
             this.txtCon.Size = new System.Drawing.Size(31, 20);
             this.txtCon.TabIndex = 12;
+            this.txtCon.Tag = "Constitución";
             // 
             // txtInt
             // 
@@ -902,6 +906,7 @@
             this.txtInt.Name = "txtInt";
             this.txtInt.Size = new System.Drawing.Size(31, 20);
             this.txtInt.TabIndex = 21;
+            this.txtInt.Tag = "Inteligencia";
             // 
             // txtBonSab
             // 
@@ -929,6 +934,7 @@
             this.txtDes.Name = "txtDes";
             this.txtDes.Size = new System.Drawing.Size(31, 20);
             this.txtDes.TabIndex = 15;
+            this.txtDes.Tag = "Destreza";
             // 
             // txtCar
             // 
@@ -938,6 +944,7 @@
             this.txtCar.Name = "txtCar";
             this.txtCar.Size = new System.Drawing.Size(31, 20);
             this.txtCar.TabIndex = 18;
+            this.txtCar.Tag = "Carisma";
             // 
             // txtBonCon
             // 
@@ -966,7 +973,7 @@
             this.Controls.Add(this.MenuBar);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.cmdSave);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1005,7 +1012,7 @@
         private System.Windows.Forms.TextBox txtExp;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblNivel;
-        private System.Windows.Forms.Button cmdSave;
+        private System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.TextBox txtName;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label4;
@@ -1057,7 +1064,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblInt;
-        private System.Windows.Forms.Button Tirada;
+        private System.Windows.Forms.Button btnTirada;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtFue;
         private System.Windows.Forms.TextBox txtBonFue;

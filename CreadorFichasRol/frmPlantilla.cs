@@ -63,28 +63,28 @@ namespace CreadorFichasRol
             string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
 
             string path = @".\Recursos\DB\PJ";
-
+            string path2 = txtName.Text + '_' + fecha + ".xml";
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);               
             }           
-            XmlWriter w = XmlWriter.Create(Path.Combine(path, txtName.Text + '_' + fecha));
+            XmlWriter w = XmlWriter.Create(Path.Combine(path, path2));
             w.WriteStartElement( txtName.Text);
-            w.WriteElementString(txtName.Name, txtName.Text);
-            w.WriteElementString(cbClase.Name, cbClase.Text);
-            w.WriteElementString(cbRaza.Name, cbRaza.Text);
-            w.WriteElementString(txtDes.Name, txtDes.Text);
-            w.WriteElementString(txtFue.Name, txtFue.Text);
-            w.WriteElementString(txtInt.Name, txtInt.Text);
-            w.WriteElementString(txtSab.Name, txtSab.Text);
-            w.WriteElementString(txtCar.Name, txtCar.Text);
-            w.WriteElementString(txtCon.Name, txtCon.Text);
-            w.WriteElementString(txtBonFue.Name, txtBonFue.Text);
-            w.WriteElementString(txtBonSab.Name, txtBonSab.Text);
-            w.WriteElementString(txtBonCon.Name, txtBonCon.Text);
-            w.WriteElementString(txtBonDes.Name, txtBonDes.Text);
-            w.WriteElementString(txtBonCar.Name, txtBonCar.Text);
-            w.WriteElementString(txtBonInt.Name, txtBonDes.Text);
+            w.WriteElementString(txtName.Tag.ToString(), txtName.Text);
+            w.WriteElementString(cbClase.Tag.ToString(), cbClase.Text);
+            w.WriteElementString(cbRaza.Tag.ToString(), cbRaza.Text);
+            w.WriteElementString(txtDes.Tag.ToString(), txtDes.Text);
+            w.WriteElementString(txtFue.Tag.ToString(), txtFue.Text);
+            w.WriteElementString(txtInt.Tag.ToString(), txtInt.Text);
+            w.WriteElementString(txtSab.Tag.ToString(), txtSab.Text);
+            w.WriteElementString(txtCar.Tag.ToString(), txtCar.Text);
+            w.WriteElementString(txtCon.Tag.ToString(), txtCon.Text);
+            w.WriteElementString(txtBonFue.Tag.ToString(), txtBonFue.Text);
+            w.WriteElementString(txtBonSab.Tag.ToString(), txtBonSab.Text);
+            w.WriteElementString(txtBonCon.Tag.ToString(), txtBonCon.Text);
+            w.WriteElementString(txtBonDes.Tag.ToString(), txtBonDes.Text);
+            w.WriteElementString(txtBonCar.Tag.ToString(), txtBonCar.Text);
+            w.WriteElementString(txtBonInt.Tag.ToString(), txtBonDes.Text);
             w.WriteEndElement();
             w.Close();
         }
