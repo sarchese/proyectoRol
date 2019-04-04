@@ -14,7 +14,6 @@ C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.exe
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.pdb
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.exe
 C:\Projekte\proyectoRol\CreadorFichasRol\bin\Debug\CreadorFichasRol.pdb
-C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.csprojResolveAssemblyReference.cache
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmObtenerAtributos.resources
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmPlantilla.resources
 C:\Projekte\proyectoRol\CreadorFichasRol\obj\Debug\CreadorFichasRol.frmValidator.resources

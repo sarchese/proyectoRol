@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Runtime.InteropServices;
+using System.IO;
+using System.Globalization;
 
 namespace CreadorFichasRol
 {
@@ -58,11 +60,19 @@ namespace CreadorFichasRol
 
         private void GuardarXml()
         {
-            XmlWriter w = XmlWriter.Create("PJ_" + txtName.Text + ".xml");
-            w.WriteStartElement("PJ_" + txtName.Text);
-            w.WriteElementString(txtName.Tag.ToString(), txtName.Text);
-            w.WriteElementString(cbClase.Tag.ToString(), cbClase.Text);
-            w.WriteElementString(cbRaza.Tag.ToString(), cbRaza.Text);
+            string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
+
+            string path = @".\Recursos\DB\PJ";
+
+            if (!Directory.Exists(path))
+            {
+                Directory.CreateDirectory(path);               
+            }           
+            XmlWriter w = XmlWriter.Create(Path.Combine(path, txtName.Text + '_' + fecha));
+            w.WriteStartElement( txtName.Text);
+            w.WriteElementString(txtName.Name, txtName.Text);
+            w.WriteElementString(cbClase.Name, cbClase.Text);
+            w.WriteElementString(cbRaza.Name, cbRaza.Text);
             w.WriteElementString(txtDes.Name, txtDes.Text);
             w.WriteElementString(txtFue.Name, txtFue.Text);
             w.WriteElementString(txtInt.Name, txtInt.Text);
