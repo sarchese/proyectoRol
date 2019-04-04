@@ -41,9 +41,9 @@
             this.lblNivel = new System.Windows.Forms.Label();
             this.cmdSave = new System.Windows.Forms.Button();
             this.topBar = new System.Windows.Forms.Panel();
-            this.btnMin = new System.Windows.Forms.PictureBox();
+            this.cmdMin = new System.Windows.Forms.PictureBox();
             this.btnBar = new System.Windows.Forms.PictureBox();
-            this.btnMax = new System.Windows.Forms.PictureBox();
+            this.cmdMax = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.lblinfinity = new System.Windows.Forms.Label();
             this.dndlogo = new System.Windows.Forms.PictureBox();
@@ -105,9 +105,9 @@
             this.txtBonCon = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.topBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dndlogo)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -225,9 +225,9 @@
             // topBar
             // 
             this.topBar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.topBar.Controls.Add(this.btnMin);
+            this.topBar.Controls.Add(this.cmdMin);
             this.topBar.Controls.Add(this.btnBar);
-            this.topBar.Controls.Add(this.btnMax);
+            this.topBar.Controls.Add(this.cmdMax);
             this.topBar.Controls.Add(this.btnClose);
             this.topBar.Controls.Add(this.lblinfinity);
             this.topBar.Controls.Add(this.dndlogo);
@@ -240,17 +240,17 @@
             // 
             // btnMin
             // 
-            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMin.Image = global::CreadorFichasRol.Properties.Resources.minimize;
-            this.btnMin.Location = new System.Drawing.Point(1075, 0);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(35, 35);
-            this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMin.TabIndex = 63;
-            this.btnMin.TabStop = false;
-            this.btnMin.Visible = false;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            this.cmdMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdMin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdMin.Image = global::CreadorFichasRol.Properties.Resources.minimize;
+            this.cmdMin.Location = new System.Drawing.Point(1075, 0);
+            this.cmdMin.Name = "btnMin";
+            this.cmdMin.Size = new System.Drawing.Size(35, 35);
+            this.cmdMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdMin.TabIndex = 63;
+            this.cmdMin.TabStop = false;
+            this.cmdMin.Visible = false;
+            this.cmdMin.Click += new System.EventHandler(this.cmdMin_Click);
             // 
             // btnBar
             // 
@@ -263,20 +263,20 @@
             this.btnBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBar.TabIndex = 63;
             this.btnBar.TabStop = false;
-            this.btnBar.Click += new System.EventHandler(this.btnBar_Click);
+            this.btnBar.Click += new System.EventHandler(this.cmdBar_Click);
             // 
             // btnMax
             // 
-            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMax.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMax.Image = global::CreadorFichasRol.Properties.Resources.maximize;
-            this.btnMax.Location = new System.Drawing.Point(1075, 0);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(35, 35);
-            this.btnMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMax.TabIndex = 63;
-            this.btnMax.TabStop = false;
-            this.btnMax.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.cmdMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdMax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdMax.Image = global::CreadorFichasRol.Properties.Resources.maximize;
+            this.cmdMax.Location = new System.Drawing.Point(1075, 0);
+            this.cmdMax.Name = "btnMax";
+            this.cmdMax.Size = new System.Drawing.Size(35, 35);
+            this.cmdMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cmdMax.TabIndex = 63;
+            this.cmdMax.TabStop = false;
+            this.cmdMax.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnClose
             // 
@@ -289,7 +289,7 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 63;
             this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.cmdClose_Click);
             // 
             // lblinfinity
             // 
@@ -976,9 +976,9 @@
             this.Text = "D&D 5";
             this.topBar.ResumeLayout(false);
             this.topBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dndlogo)).EndInit();
             this.groupBox5.ResumeLayout(false);
@@ -1016,9 +1016,9 @@
         private System.Windows.Forms.PictureBox dndlogo;
         private System.Windows.Forms.Label lblinfinity;
         private System.Windows.Forms.PictureBox btnClose;
-        private System.Windows.Forms.PictureBox btnMax;
+        private System.Windows.Forms.PictureBox cmdMax;
         private System.Windows.Forms.PictureBox btnBar;
-        private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.PictureBox cmdMin;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TabPage tabPage2;

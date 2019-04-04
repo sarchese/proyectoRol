@@ -82,25 +82,30 @@ namespace CreadorFichasRol
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            btnMax.Visible = false;
-            btnMin.Visible = true;
+            cmdMax.Visible = false;
+            cmdMin.Visible = true;
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void cmdClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnBar_Click(object sender, EventArgs e)
+        private void cmdBar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnMin_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void cmdMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-            btnMin.Visible = false;
-            btnMax.Visible = true;
+            cmdMin.Visible = false;
+            cmdMax.Visible = true;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
