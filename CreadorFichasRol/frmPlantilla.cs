@@ -19,7 +19,7 @@ namespace CreadorFichasRol
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Tirada_Click_1(object sender, EventArgs e)
         {
             using (frmObtenerAtributos frm = new frmObtenerAtributos())
             {
@@ -45,8 +45,23 @@ namespace CreadorFichasRol
 
         private void Guardar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                GuardarXml();
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("No se ha podido guardar");
+            }
+        }
+
+        private void GuardarXml()
+        {
             XmlWriter w = XmlWriter.Create("PJ_" + txtName.Text + ".xml");
             w.WriteStartElement("PJ_" + txtName.Text);
+            w.WriteElementString(txtName.Name, txtName.Text);
+            //w.WriteElementString(txt.Name, txtName.Text);
             w.WriteElementString(txtDes.Name, txtDes.Text);
             w.WriteElementString(txtFue.Name, txtFue.Text);
             w.WriteElementString(txtInt.Name, txtInt.Text);
@@ -59,7 +74,6 @@ namespace CreadorFichasRol
             w.WriteElementString(txtBonDes.Name, txtBonDes.Text);
             w.WriteElementString(txtBonCar.Name, txtBonCar.Text);
             w.WriteElementString(txtBonInt.Name, txtBonDes.Text);
-
             w.WriteEndElement();
             w.Close();
         }
@@ -98,6 +112,8 @@ namespace CreadorFichasRol
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+       
 
 
 
