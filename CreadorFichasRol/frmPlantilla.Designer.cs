@@ -100,6 +100,8 @@
             this.lblinfinity = new System.Windows.Forms.Label();
             this.dndlogo = new System.Windows.Forms.PictureBox();
             this.MenuBar = new System.Windows.Forms.Panel();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -112,12 +114,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dndlogo)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(247, 66);
+            this.label1.Location = new System.Drawing.Point(20, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
@@ -127,7 +130,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 92);
+            this.label2.Location = new System.Drawing.Point(20, 52);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
@@ -137,7 +140,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(444, 62);
+            this.label3.Location = new System.Drawing.Point(218, 26);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
@@ -147,7 +150,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(444, 88);
+            this.label4.Location = new System.Drawing.Point(218, 52);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
@@ -174,7 +177,7 @@
             // 
             // Tirada
             // 
-            this.Tirada.Location = new System.Drawing.Point(46, 210);
+            this.Tirada.Location = new System.Drawing.Point(23, 210);
             this.Tirada.Margin = new System.Windows.Forms.Padding(2);
             this.Tirada.Name = "Tirada";
             this.Tirada.Size = new System.Drawing.Size(97, 26);
@@ -275,7 +278,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(511, 59);
+            this.textBox3.Location = new System.Drawing.Point(291, 19);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 34;
@@ -283,7 +286,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(511, 89);
+            this.textBox5.Location = new System.Drawing.Point(291, 49);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 35;
@@ -291,7 +294,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(326, 89);
+            this.textBox7.Location = new System.Drawing.Point(99, 49);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 36;
@@ -299,7 +302,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(326, 59);
+            this.txtName.Location = new System.Drawing.Point(99, 19);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 20);
             this.txtName.TabIndex = 37;
@@ -307,7 +310,7 @@
             // 
             // txtExp
             // 
-            this.txtExp.Location = new System.Drawing.Point(691, 62);
+            this.txtExp.Location = new System.Drawing.Point(464, 22);
             this.txtExp.Name = "txtExp";
             this.txtExp.Size = new System.Drawing.Size(100, 20);
             this.txtExp.TabIndex = 40;
@@ -316,7 +319,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(662, 66);
+            this.label6.Location = new System.Drawing.Point(435, 26);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 13);
@@ -326,7 +329,7 @@
             // lblNivel
             // 
             this.lblNivel.AutoSize = true;
-            this.lblNivel.Location = new System.Drawing.Point(689, 93);
+            this.lblNivel.Location = new System.Drawing.Point(473, 52);
             this.lblNivel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNivel.Name = "lblNivel";
             this.lblNivel.Size = new System.Drawing.Size(13, 13);
@@ -401,7 +404,7 @@
             // 
             // cmdSave
             // 
-            this.cmdSave.Location = new System.Drawing.Point(731, 469);
+            this.cmdSave.Location = new System.Drawing.Point(1046, 596);
             this.cmdSave.Margin = new System.Windows.Forms.Padding(2);
             this.cmdSave.Name = "cmdSave";
             this.cmdSave.Size = new System.Drawing.Size(97, 26);
@@ -510,10 +513,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(249, 123);
+            this.tabControl1.Location = new System.Drawing.Point(206, 123);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(579, 341);
+            this.tabControl1.Size = new System.Drawing.Size(948, 468);
             this.tabControl1.TabIndex = 60;
             // 
             // tabPage1
@@ -525,9 +528,9 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(571, 315);
+            this.tabPage1.Size = new System.Drawing.Size(940, 442);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Caracteristicas";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -770,7 +773,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(571, 315);
+            this.tabPage2.Size = new System.Drawing.Size(940, 442);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -847,11 +850,11 @@
             // lblinfinity
             // 
             this.lblinfinity.AutoSize = true;
-            this.lblinfinity.Font = new System.Drawing.Font("Argentina", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinfinity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinfinity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblinfinity.Location = new System.Drawing.Point(217, 4);
             this.lblinfinity.Name = "lblinfinity";
-            this.lblinfinity.Size = new System.Drawing.Size(121, 26);
+            this.lblinfinity.Size = new System.Drawing.Size(80, 29);
             this.lblinfinity.TabIndex = 64;
             this.lblinfinity.Text = "Infinity";
             // 
@@ -874,6 +877,37 @@
             this.MenuBar.Size = new System.Drawing.Size(200, 598);
             this.MenuBar.TabIndex = 62;
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Controls.Add(this.label4);
+            this.groupBox5.Controls.Add(this.lblNivel);
+            this.groupBox5.Controls.Add(this.textBox3);
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.txtExp);
+            this.groupBox5.Controls.Add(this.textBox7);
+            this.groupBox5.Controls.Add(this.txtName);
+            this.groupBox5.Location = new System.Drawing.Point(206, 42);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(936, 75);
+            this.groupBox5.TabIndex = 63;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Rasgos básicos";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(435, 52);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(18, 13);
+            this.label22.TabIndex = 43;
+            this.label22.Text = "W";
+            // 
             // frmPlantilla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -883,17 +917,7 @@
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.cmdSave);
-            this.Controls.Add(this.lblNivel);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtExp);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -917,8 +941,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dndlogo)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -995,6 +1020,8 @@
         private System.Windows.Forms.PictureBox btnMax;
         private System.Windows.Forms.PictureBox btnBar;
         private System.Windows.Forms.PictureBox btnMin;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label22;
     }
 }
 
