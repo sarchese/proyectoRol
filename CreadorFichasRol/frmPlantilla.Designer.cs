@@ -49,6 +49,9 @@
             this.dndlogo = new System.Windows.Forms.PictureBox();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbClase = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cbRaza = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -101,9 +104,6 @@
             this.txtCar = new System.Windows.Forms.TextBox();
             this.txtBonCon = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.cbRaza = new System.Windows.Forms.ComboBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.cbClase = new System.Windows.Forms.ComboBox();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBar)).BeginInit();
@@ -343,6 +343,56 @@
             this.groupBox5.TabIndex = 63;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Rasgos básicos";
+            // 
+            // cbClase
+            // 
+            this.cbClase.FormattingEnabled = true;
+            this.cbClase.Items.AddRange(new object[] {
+            "BÁRBARO",
+            "BARDO",
+            "CLÉRIGO",
+            "BRUJO",
+            "DRUIDA",
+            "EXPLORADOR",
+            "HECHICERO",
+            "GUERRERO",
+            "MONJE",
+            "MAGO",
+            "PÍCARO",
+            "PALADÍN"});
+            this.cbClase.Location = new System.Drawing.Point(99, 48);
+            this.cbClase.Name = "cbClase";
+            this.cbClase.Size = new System.Drawing.Size(121, 21);
+            this.cbClase.TabIndex = 46;
+            this.cbClase.Tag = "Clase";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(253, 26);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(32, 13);
+            this.label23.TabIndex = 45;
+            this.label23.Text = "Raza";
+            // 
+            // cbRaza
+            // 
+            this.cbRaza.FormattingEnabled = true;
+            this.cbRaza.Items.AddRange(new object[] {
+            "DRACÓNIDO",
+            "ELFO",
+            "ENANO",
+            "GNOMO",
+            "HUMANO",
+            "MEDIANO",
+            "SEMIELFO",
+            "SEMIORCO",
+            "TIEFLING"});
+            this.cbRaza.Location = new System.Drawing.Point(290, 22);
+            this.cbRaza.Name = "cbRaza";
+            this.cbRaza.Size = new System.Drawing.Size(115, 21);
+            this.cbRaza.TabIndex = 44;
             // 
             // label22
             // 
@@ -907,55 +957,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(948, 468);
             this.tabControl1.TabIndex = 60;
-            // 
-            // cbRaza
-            // 
-            this.cbRaza.FormattingEnabled = true;
-            this.cbRaza.Items.AddRange(new object[] {
-            "DRACÓNIDO",
-            "ELFO",
-            "ENANO",
-            "GNOMO",
-            "HUMANO",
-            "MEDIANO",
-            "SEMIELFO",
-            "SEMIORCO",
-            "TIEFLING"});
-            this.cbRaza.Location = new System.Drawing.Point(290, 22);
-            this.cbRaza.Name = "cbRaza";
-            this.cbRaza.Size = new System.Drawing.Size(115, 21);
-            this.cbRaza.TabIndex = 44;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(253, 26);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 13);
-            this.label23.TabIndex = 45;
-            this.label23.Text = "Raza";
-            // 
-            // cbClase
-            // 
-            this.cbClase.FormattingEnabled = true;
-            this.cbClase.Items.AddRange(new object[] {
-            "BÁRBARO",
-            "BARDO",
-            "CLÉRIGO",
-            "BRUJO",
-            "DRUIDA",
-            "EXPLORADOR",
-            "HECHICERO",
-            "GUERRERO",
-            "MONJE",
-            "MAGO",
-            "PÍCARO",
-            "PALADÍN"});
-            this.cbClase.Location = new System.Drawing.Point(99, 48);
-            this.cbClase.Name = "cbClase";
-            this.cbClase.Size = new System.Drawing.Size(121, 21);
-            this.cbClase.TabIndex = 46;
             // 
             // frmPlantilla
             // 

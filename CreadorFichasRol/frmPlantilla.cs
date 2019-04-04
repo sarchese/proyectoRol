@@ -60,8 +60,9 @@ namespace CreadorFichasRol
         {
             XmlWriter w = XmlWriter.Create("PJ_" + txtName.Text + ".xml");
             w.WriteStartElement("PJ_" + txtName.Text);
-            w.WriteElementString(txtName.Name, txtName.Text);
-            //w.WriteElementString(txt.Name, txtName.Text);
+            w.WriteElementString(txtName.Tag.ToString(), txtName.Text);
+            w.WriteElementString(cbClase.Tag.ToString(), cbClase.Text);
+            w.WriteElementString(cbRaza.Tag.ToString(), cbRaza.Text);
             w.WriteElementString(txtDes.Name, txtDes.Text);
             w.WriteElementString(txtFue.Name, txtFue.Text);
             w.WriteElementString(txtInt.Name, txtInt.Text);
