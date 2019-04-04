@@ -104,6 +104,8 @@
             this.txtCar = new System.Windows.Forms.TextBox();
             this.txtBonCon = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmdMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBar)).BeginInit();
@@ -859,6 +861,7 @@
             this.txtBonFue.Name = "txtBonFue";
             this.txtBonFue.Size = new System.Drawing.Size(24, 20);
             this.txtBonFue.TabIndex = 6;
+            this.txtBonFue.Tag = "BonFuerza";
             // 
             // txtSab
             // 
@@ -878,6 +881,7 @@
             this.txtBonInt.Name = "txtBonInt";
             this.txtBonInt.Size = new System.Drawing.Size(24, 20);
             this.txtBonInt.TabIndex = 10;
+            this.txtBonInt.Tag = "BonInt";
             // 
             // txtBonDes
             // 
@@ -887,6 +891,7 @@
             this.txtBonDes.Name = "txtBonDes";
             this.txtBonDes.Size = new System.Drawing.Size(24, 20);
             this.txtBonDes.TabIndex = 22;
+            this.txtBonDes.Tag = "BonDes";
             // 
             // txtCon
             // 
@@ -916,6 +921,7 @@
             this.txtBonSab.Name = "txtBonSab";
             this.txtBonSab.Size = new System.Drawing.Size(24, 20);
             this.txtBonSab.TabIndex = 13;
+            this.txtBonSab.Tag = "BonSab";
             // 
             // txtBonCar
             // 
@@ -925,6 +931,7 @@
             this.txtBonCar.Name = "txtBonCar";
             this.txtBonCar.Size = new System.Drawing.Size(24, 20);
             this.txtBonCar.TabIndex = 19;
+            this.txtBonCar.Tag = "BonCar";
             // 
             // txtDes
             // 
@@ -954,6 +961,7 @@
             this.txtBonCon.Name = "txtBonCon";
             this.txtBonCon.Size = new System.Drawing.Size(24, 20);
             this.txtBonCon.TabIndex = 16;
+            this.txtBonCon.Tag = "BonCon";
             // 
             // tabControl1
             // 
@@ -965,11 +973,27 @@
             this.tabControl1.Size = new System.Drawing.Size(948, 468);
             this.tabControl1.TabIndex = 60;
             // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(967, 598);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(81, 23);
+            this.btnCargar.TabIndex = 64;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.InitialDirectory = "/Recursos/DB/PJ/";
+            // 
             // frmPlantilla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1154, 633);
+            this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.MenuBar);
             this.Controls.Add(this.topBar);
             this.Controls.Add(this.tabControl1);
@@ -1082,6 +1106,8 @@
         private System.Windows.Forms.ComboBox cbRaza;
         private System.Windows.Forms.ComboBox cbClase;
         public System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

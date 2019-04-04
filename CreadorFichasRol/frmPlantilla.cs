@@ -11,13 +11,16 @@ using System.Xml;
 using System.Runtime.InteropServices;
 using System.IO;
 using System.Globalization;
+using System.Xml.Linq;
 
 namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
+        
         public frmPlantilla()
         {
+      
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
         }
@@ -48,7 +51,8 @@ namespace CreadorFichasRol
         private void Guardar_Click(object sender, EventArgs e)
         {
             try
-            {
+            {               
+                
                 GuardarXml();
             }
 
@@ -61,24 +65,34 @@ namespace CreadorFichasRol
         private void GuardarXml()
         {
             string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
-
             string path = @".\Recursos\DB\PJ";
             string path2 = txtName.Text + '_' + fecha + ".xml";
+            XmlWriter w;
             if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);               
             }           
-            XmlWriter w = XmlWriter.Create(Path.Combine(path, path2));
-            w.WriteStartElement( txtName.Text);
+            if (System.IO.File.Exists(Path.Combine(path, path2)))
+            {
+               w = XmlWriter.Create(Path.Combine(path, path2) + ".old");              
+               
+            }
+            w = XmlWriter.Create(Path.Combine(path, path2));
+            w.WriteStartElement("Personaje");
+            w.WriteStartElement("Rasgos");            
             w.WriteElementString(txtName.Tag.ToString(), txtName.Text);
             w.WriteElementString(cbClase.Tag.ToString(), cbClase.Text);
             w.WriteElementString(cbRaza.Tag.ToString(), cbRaza.Text);
+            w.WriteEndElement();
+            w.WriteStartElement("Atributos");
             w.WriteElementString(txtDes.Tag.ToString(), txtDes.Text);
             w.WriteElementString(txtFue.Tag.ToString(), txtFue.Text);
             w.WriteElementString(txtInt.Tag.ToString(), txtInt.Text);
             w.WriteElementString(txtSab.Tag.ToString(), txtSab.Text);
             w.WriteElementString(txtCar.Tag.ToString(), txtCar.Text);
             w.WriteElementString(txtCon.Tag.ToString(), txtCon.Text);
+            w.WriteEndElement();
+            w.WriteStartElement("Bonificadores");
             w.WriteElementString(txtBonFue.Tag.ToString(), txtBonFue.Text);
             w.WriteElementString(txtBonSab.Tag.ToString(), txtBonSab.Text);
             w.WriteElementString(txtBonCon.Tag.ToString(), txtBonCon.Text);
@@ -86,7 +100,30 @@ namespace CreadorFichasRol
             w.WriteElementString(txtBonCar.Tag.ToString(), txtBonCar.Text);
             w.WriteElementString(txtBonInt.Tag.ToString(), txtBonDes.Text);
             w.WriteEndElement();
+            w.WriteEndElement();
             w.Close();
+            MessageBox.Show("El fichero ha sido guardado.");
+        }
+
+        private void leerXML()
+        {
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            openFileDialog1.ShowDialog();
+
+            string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
+            string path = @".\Recursos\DB\PJ";
+            string path2 = txtName.Text + '_' + fecha + ".xml";
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(Path.Combine(path, path2));
+
+            XmlNodeList xPersonas = xDoc.GetElementsByTagName("Personajes");
+            XmlNodeList xLista = ((XmlElement)xPersonas[0]).GetElementsByTagName("Rasgos");
+            foreach (XmlElement nodo in xLista)
+            {
+                txtName.Text = nodo.GetAttribute("Nombre");
+                //txtName.Text = nodo.InnerText;
+                cbClase.Text = nodo.GetAttribute("Clase");
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -106,11 +143,6 @@ namespace CreadorFichasRol
             this.WindowState = FormWindowState.Minimized;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void cmdMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -129,9 +161,18 @@ namespace CreadorFichasRol
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-       
-
-
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               
+                leerXML();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se puede cargar");
+            }           
+        }
 
         //private void txtExp_TextChanged(object sender, EventArgs e)
         //{
