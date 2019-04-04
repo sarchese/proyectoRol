@@ -1,26 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using System.Xml;
-using System.Runtime.InteropServices;
-using System.IO;
-using System.Globalization;
 using System.Xml.Linq;
 
 namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
-        
+
         public frmPlantilla()
         {
-      
+
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
         }
@@ -51,8 +45,8 @@ namespace CreadorFichasRol
         private void Guardar_Click(object sender, EventArgs e)
         {
             try
-            {               
-                
+            {
+
                 GuardarXml();
             }
 
@@ -70,16 +64,16 @@ namespace CreadorFichasRol
             XmlWriter w;
             if (!Directory.Exists(path))
             {
-                Directory.CreateDirectory(path);               
-            }           
+                Directory.CreateDirectory(path);
+            }
             if (System.IO.File.Exists(Path.Combine(path, path2)))
             {
-               w = XmlWriter.Create(Path.Combine(path, path2) + ".old");              
-               
+                w = XmlWriter.Create(Path.Combine(path, path2) + ".old");
+
             }
             w = XmlWriter.Create(Path.Combine(path, path2));
             w.WriteStartElement("Personaje");
-            w.WriteStartElement("Rasgos");            
+            w.WriteStartElement("Rasgos");
             w.WriteElementString(txtName.Tag.ToString(), txtName.Text);
             w.WriteElementString(cbClase.Tag.ToString(), cbClase.Text);
             w.WriteElementString(cbRaza.Tag.ToString(), cbRaza.Text);
@@ -107,22 +101,33 @@ namespace CreadorFichasRol
 
         private void leerXML()
         {
+            string path = @".\Recursos\DB\PJ\";
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+
+            openFileDialog1.InitialDirectory = path;
+            openFileDialog1.Title = "Browse XML Files";
+            openFileDialog1.DefaultExt = "xml";
             openFileDialog1.ShowDialog();
+            string filename = openFileDialog1.SafeFileName;
 
-            string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
-            string path = @".\Recursos\DB\PJ";
-            string path2 = txtName.Text + '_' + fecha + ".xml";
-            XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(Path.Combine(path, path2));
-
-            XmlNodeList xPersonas = xDoc.GetElementsByTagName("Personajes");
-            XmlNodeList xLista = ((XmlElement)xPersonas[0]).GetElementsByTagName("Rasgos");
-            foreach (XmlElement nodo in xLista)
+            XDocument pj = XDocument.Load(Path.Combine(path, filename));
+            XElement infoPersonaje = pj.Element("Personaje");
+            IEnumerable<XElement> infoRasgos = infoPersonaje.Descendants("Rasgos");
+            foreach (XElement datos in infoRasgos)
             {
-                txtName.Text = nodo.GetAttribute("Nombre");
-                //txtName.Text = nodo.InnerText;
-                cbClase.Text = nodo.GetAttribute("Clase");
+                txtName.Text = datos.Element("Nombre").Value;
+                cbClase.Text = datos.Element("Clase").Value;
+                cbRaza.Text = datos.Element("Raza").Value;
+            }
+            IEnumerable<XElement> infoAtributos = infoPersonaje.Descendants("Atributos");
+            foreach (XElement datos in infoAtributos)
+            {
+                txtFue.Text = datos.Element("Fuerza").Value;
+                txtCar.Text = datos.Element("Carisma").Value;
+                txtCon.Text = datos.Element("Constitución").Value;
+                txtSab.Text = datos.Element("Sabiduria").Value;
+                txtInt.Text = datos.Element("Inteligencia").Value;
+                txtDes.Text = datos.Element("Destreza").Value;                             
             }
         }
 
@@ -165,13 +170,13 @@ namespace CreadorFichasRol
         {
             try
             {
-               
+
                 leerXML();
             }
             catch (Exception)
             {
                 MessageBox.Show("No se puede cargar");
-            }           
+            }
         }
 
         //private void txtExp_TextChanged(object sender, EventArgs e)
