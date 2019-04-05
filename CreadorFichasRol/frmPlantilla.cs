@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -11,11 +12,30 @@ namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
+
         public frmPlantilla()
         {
 
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
+        }
+        private IList<TextBox> CrearLista()
+        {
+            IList<TextBox> miListaDeDatos = new List<TextBox>();
+            miListaDeDatos.Add(txtName);
+            miListaDeDatos.Add(txtCar);
+            miListaDeDatos.Add(txtFue);
+            miListaDeDatos.Add(txtCon);
+            miListaDeDatos.Add(txtDes);
+            miListaDeDatos.Add(txtInt);
+            miListaDeDatos.Add(txtSab);
+            miListaDeDatos.Add(txtBonCar);
+            miListaDeDatos.Add(txtBonFue);
+            miListaDeDatos.Add(txtBonCon);
+            miListaDeDatos.Add(txtBonDes);
+            miListaDeDatos.Add(txtBonInt);
+            miListaDeDatos.Add(txtBonSab);
+            return miListaDeDatos;
         }
         private void btnTirada_Click(object sender, EventArgs e)
         {
@@ -44,10 +64,8 @@ namespace CreadorFichasRol
         {
             try
             {
-
                 GuardarXml();
             }
-
             catch (Exception)
             {
                 MessageBox.Show("No se ha podido guardar");
@@ -95,52 +113,63 @@ namespace CreadorFichasRol
             w.Close();
             MessageBox.Show("El fichero ha sido guardado.");
         }
-        private void leerXML()
-        {
-            string path = @".\Recursos\DB\PJ\";
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+        //private void leerXML()
+        //{
+        //    string path = @".\Recursos\DB\PJ\";
+        //    this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 
-            openFileDialog1.InitialDirectory = path;
-            openFileDialog1.Title = "Browse XML Files";
-            openFileDialog1.DefaultExt = "xml";
-            openFileDialog1.ShowDialog();
-            string filename = openFileDialog1.SafeFileName;
-
-            XDocument pj = XDocument.Load(Path.Combine(path, filename));
-            XElement infoPersonaje = pj.Element("Personaje");
-            IEnumerable<XElement> infoRasgos = infoPersonaje.Descendants("Rasgos");
-            foreach (XElement datos in infoRasgos)
-            {
-                txtName.Text = datos.Element("Nombre").Value;
-                cbClase.Text = datos.Element("Clase").Value;
-                cbRaza.Text = datos.Element("Raza").Value;
-            }
-            IEnumerable<XElement> infoAtributos = infoPersonaje.Descendants("Atributos");
-            foreach (XElement datos in infoAtributos)
-            {
-                txtFue.Text = datos.Element("Fuerza").Value;
-                txtCar.Text = datos.Element("Carisma").Value;
-                txtCon.Text = datos.Element("Constitución").Value;
-                txtSab.Text = datos.Element("Sabiduria").Value;
-                txtInt.Text = datos.Element("Inteligencia").Value;
-                txtDes.Text = datos.Element("Destreza").Value;
-            }
-            IEnumerable<XElement> infoBonificadores = infoPersonaje.Descendants("Bonificadores");
-            foreach (XElement datos in infoBonificadores)
-            {
-                txtBonFue.Text = datos.Element("BonFue").Value;
-                txtBonCar.Text = datos.Element("BonCar").Value;
-                txtBonCon.Text = datos.Element("BonCon").Value;
-                txtBonSab.Text = datos.Element("BonSab").Value;
-                txtBonInt.Text = datos.Element("BonInt").Value;
-                txtBonDes.Text = datos.Element("BonDes").Value;
-            }
-        }
+        //    openFileDialog1.InitialDirectory = path;
+        //    openFileDialog1.Title = "Browse XML Files";
+        //    openFileDialog1.DefaultExt = "xml";
+        //    openFileDialog1.ShowDialog();
+        //    string filename = openFileDialog1.SafeFileName;
+        //    string ruta = Path.Combine(path, filename);
+        //    XDocument pj = XDocument.Load(ruta);
+        //    XElement infoPersonaje = pj.Element("Personaje");
+        //    IEnumerable<XElement> infoRasgos = infoPersonaje.Descendants("Rasgos");
+        //    foreach (XElement datos in infoRasgos)
+        //    {
+        //        txtName.Text = datos.Element("Nombre").Value;
+        //        cbClase.Text = datos.Element("Clase").Value;
+        //        cbRaza.Text = datos.Element("Raza").Value;
+        //    }
+        //    IEnumerable<XElement> infoAtributos = infoPersonaje.Descendants("Atributos");
+        //    foreach (XElement datos in infoAtributos)
+        //    {
+        //        txtFue.Text = datos.Element("Fuerza").Value;
+        //        txtCar.Text = datos.Element("Carisma").Value;
+        //        txtCon.Text = datos.Element("Constitución").Value;
+        //        txtSab.Text = datos.Element("Sabiduria").Value;
+        //        txtInt.Text = datos.Element("Inteligencia").Value;
+        //        txtDes.Text = datos.Element("Destreza").Value;
+        //    }
+        //    IEnumerable<XElement> infoBonificadores = infoPersonaje.Descendants("Bonificadores");
+        //    foreach (XElement datos in infoBonificadores)
+        //    {
+        //        txtBonFue.Text = datos.Element("BonFue").Value;
+        //        txtBonCar.Text = datos.Element("BonCar").Value;
+        //        txtBonCon.Text = datos.Element("BonCon").Value;
+        //        txtBonSab.Text = datos.Element("BonSab").Value;
+        //        txtBonInt.Text = datos.Element("BonInt").Value;
+        //        txtBonDes.Text = datos.Element("BonDes").Value;
+        //    }
+        //}
         private void btnCargar_Click(object sender, EventArgs e)
         {
             try
             {
-                leerXML();
+                string path = @".\Recursos\DB\PJ\";
+                this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+                openFileDialog1.InitialDirectory = path;
+                openFileDialog1.Title = "Browse XML Files";
+                openFileDialog1.DefaultExt = "xml";
+                openFileDialog1.ShowDialog();
+                string filename = openFileDialog1.SafeFileName;
+                string ruta = Path.Combine(path, filename);
+                IList<TextBox> listaTextBox = CrearLista();
+                Cargar carga = new Cargar();
+                carga.CargarDatos(listaTextBox, ruta);
+                //leerXML();
                 btnTirada.Enabled = false;
             }
             catch (Exception)
@@ -178,6 +207,7 @@ namespace CreadorFichasRol
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
     }
+
 }
 
 //private void txtExp_TextChanged(object sender, EventArgs e)

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bonificadores.cs" />
+    <Compile Include="Cargar.cs" />
     <Compile Include="frmObtenerAtributos.cs">
       <SubType>Form</SubType>
     </Compile>
