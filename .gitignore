@@ -23,7 +23,7 @@ bld/
 [Oo]bj/
 
 # Visual Studio 2015 cache/options directory
-.vs/
+.vs
 CreadorFichasRol\bin
 CreadorFichasRol\obj
 
