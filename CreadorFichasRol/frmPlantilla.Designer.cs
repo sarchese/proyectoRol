@@ -341,7 +341,7 @@
             this.groupBox5.Controls.Add(this.txtName);
             this.groupBox5.Location = new System.Drawing.Point(206, 42);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(944, 75);
+            this.groupBox5.Size = new System.Drawing.Size(936, 75);
             this.groupBox5.TabIndex = 63;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Rasgos básicos";
@@ -426,7 +426,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(940, 442);
+            this.tabPage1.Size = new System.Drawing.Size(928, 442);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Caracteristicas";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -970,7 +970,7 @@
             this.tabControl1.Location = new System.Drawing.Point(206, 123);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(948, 468);
+            this.tabControl1.Size = new System.Drawing.Size(936, 468);
             this.tabControl1.TabIndex = 60;
             // 
             // btnCargar
