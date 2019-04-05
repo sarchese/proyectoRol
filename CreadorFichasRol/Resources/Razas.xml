@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Raza xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Enano>
+		<Fue>Enano</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>2</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T2>Vision en la Oscuridad</T2>
+		<T3>Resistencia Enana</T3>
+		<T4>Entrenamiento de combate enano</T4>
+		<T5>Competencia con Herramientas</T5>
+		<T6>Afinidad con la piedra</T6>
+	</Enano>
+	<Enanodelascolinas>
+		<Fue>Enano de las Colinas</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>1</Car>
+		<T1>0</T1>
+		<T7>Aguante Enano</T7>
+	</Enanodelascolinas>
+	<EnanodelasMontaña>
+		<Fue>Enano de las Montañas</Fue>
+		<Des>2</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T7>Entrenamiento con Armadura Enana</T7>
+	</EnanodelasMontaña>
+	<Elfos>
+		<Fue>Elfos</Fue>
+		<Des>0</Des>
+		<Con>2</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T2>Vision en la Oscuridad</T2>
+		<T3>Sentidos Agudos</T3>
+		<T4>Linaje Feérico</T4>
+		<T5>Trance</T5>
+	</Elfos>
+	<AltoElfo>
+		<Fue>Alto Elfo</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>1</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T6>Entrenamiento con Armas Elficas</T6>
+	</AltoElfo>
+	<ElfodelosBosques>
+		<Fue>Elfo de los Bosques</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>1</Car>
+		<T1>0</T1>
+		<T6>Entrenamiento con Armas Elficas</T6>
+		<T7>Pies Veloces</T7>
+		<T8>Máscara de la Naturaleza</T8>
+	</ElfodelosBosques>
+	<ElfoOscuro>
+		<Fue>Elfo Oscuro</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>1</T1>
+		<T6>Visión en la Oscuridad Superior</T6>
+		<T7>Sensibilidad a la Luz Solar</T7>
+		<T8>Magia Drow</T8>
+	</ElfoOscuro>
+	<Mediano>
+		<Fue>Mediano</Fue>
+		<Des>0</Des>
+		<Con>2</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T2>Afortunado</T2>
+		<T3>Valiente</T3>
+		<T4>Agilidad de Mediano</T4>
+	</Mediano>
+	<PiesLigeros>
+		<Fue>Pies Ligeros</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>1</T1>
+		<T5>Sigiloso por Naturaleza</T5>
+	</PiesLigeros>
+	<Fornido>
+		<Fue>Fornido</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>1</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T5>Resistencia de Fornido</T5>
+	</Fornido>
+	<Humano>
+		<Fue>Humano</Fue>
+		<Des>1</Des>
+		<Con>1</Con>
+		<Int>1</Int>
+		<Sab>1</Sab>
+		<Car>1</Car>
+		<T1>1</T1>
+	</Humano>
+	<Draconico>
+		<Fue>Dracónido</Fue>
+		<Des>2</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>1</T1>
+		<T2>Linaje Dracónido</T2>
+		<T3>Ataque de Aliento</T3>
+		<T4>Resistencia al Daño</T4>
+	</Draconico>
+	<Gnomo>
+		<Fue>Gnomo</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>2</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T2>Vision en la Oscuridad</T2>
+		<T3>Astucia Gnoma</T3>
+	</Gnomo>
+	<GnomodelosBosques>
+		<Fue>Gnomo de los Bosques</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>1</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T4>Ilusionista Innato</T4>
+		<T5>Hablar con las Bestezuelas</T5>
+	</GnomodelosBosques>
+	<GnomodelasRocas>
+		<Fue>Gnomo de las Rocas</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>1</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T4>Saber del Artificiero</T4>
+		<T5>Manitas</T5>
+	</GnomodelasRocas>
+	<Semielfo>
+		<Fue>Semielfo</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>2</T1>
+		<T2>Dos caracteristicas extra a 1</T2>
+		<T3>Vision en la Oscuridad</T3>
+		<T4>Linaje Feérico</T4>
+		<T5>Versatil con Habilidades</T5>
+	</Semielfo>
+	<Semiorco>
+		<Fue>Semiorco</Fue>
+		<Des>2</Des>
+		<Con>0</Con>
+		<Int>1</Int>
+		<Sab>0</Sab>
+		<Car>0</Car>
+		<T1>0</T1>
+		<T2>Vision en la Oscuridad</T2>
+		<T3>Amenazador</T3>
+		<T4>Aguante Incansable</T4>
+		<T5>Ataques Salvajes</T5>
+	</Semiorco>
+	<Tiefling>
+		<Fue>Tiefling</Fue>
+		<Des>0</Des>
+		<Con>0</Con>
+		<Int>0</Int>
+		<Sab>1</Sab>
+		<Car>0</Car>
+		<T1>2</T1>
+		<T2>Vision en la Oscuridad</T2>
+		<T3>Resistencia Infernal</T3>
+		<T4>Linaje Infernal</T4>
+	</Tiefling>
+</Raza>
