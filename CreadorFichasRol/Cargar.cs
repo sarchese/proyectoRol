@@ -7,6 +7,14 @@ namespace CreadorFichasRol
 {
     class Cargar
     {
+        /// <summary>
+        /// anadir aqui un bucle que deje los textbox cargados en enabled para que no peudan ser modificados con trampita.
+        /// 
+        /// </summary>
+        /// <param name="listDatos"></param>
+        /// <param name="filename"></param>
+        /// <param name="clase"></param>
+        /// <param name="raza"></param>
         public void CargarDatos(List<TextBox> listDatos, string filename, ComboBox clase, ComboBox raza)
         {
             XDocument pj = XDocument.Load(filename);
