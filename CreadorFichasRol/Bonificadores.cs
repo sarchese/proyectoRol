@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace CreadorFichasRol
 {
     public class Bonificadores
-    {           
-             public int GetBonificador(string valor)
+    {
+        public int GetBonificador(string valor)
         {
             int num;
             int numbase = 5;
@@ -21,7 +21,7 @@ namespace CreadorFichasRol
                     numbase++;
                 }
             }
-           bono = num - numbase;
+            bono = num - numbase;
             return bono;
         }
     }
