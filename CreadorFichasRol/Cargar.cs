@@ -7,40 +7,37 @@ namespace CreadorFichasRol
 {
     class Cargar
     {
-        public void CargarDatos(IList<TextBox> listDatos, string filename)
+        public void CargarDatos(List<TextBox> listDatos, string filename, ComboBox clase, ComboBox raza)
         {
             XDocument pj = XDocument.Load(filename);
             XElement infoPersonaje = pj.Element("Personaje");
             IEnumerable<XElement> infoRasgos = infoPersonaje.Descendants("Rasgos");
             foreach (XElement datos in infoRasgos)
+            {            
+                listDatos[listDatos.FindIndex(x => x.Tag == "Nombre")].Text = datos.Element("Nombre").Value;
+                clase.Text = datos.Element("Clase").Value;
+                raza.Text = datos.Element("Raza").Value;
+            }
+            IEnumerable<XElement> infoAtributos = infoPersonaje.Descendants("Atributos");
+            foreach (XElement datosAtt in infoAtributos)
             {
-                listDatos.Cast<TextBox>().Where(c => c.Name == "txtName");
-            //    txtName.Text = datos.Element("Nombre").Value;
-            //    cbClase.Text = datos.Element("Clase").Value;
-            //    cbRaza.Text = datos.Element("Raza").Value;
-            //}
-            //IEnumerable<XElement> infoAtributos = infoPersonaje.Descendants("Atributos");
-            //foreach (XElement datos in infoAtributos)
-            //{
-            //    txtFue.Text = datos.Element("Fuerza").Value;
-            //    txtCar.Text = datos.Element("Carisma").Value;
-            //    txtCon.Text = datos.Element("Constitución").Value;
-            //    txtSab.Text = datos.Element("Sabiduria").Value;
-            //    txtInt.Text = datos.Element("Inteligencia").Value;
-            //    txtDes.Text = datos.Element("Destreza").Value;
-            //}
-            //IEnumerable<XElement> infoBonificadores = infoPersonaje.Descendants("Bonificadores");
-            //foreach (XElement datos in infoBonificadores)
-            //{
-            //    txtBonFue.Text = datos.Element("BonFue").Value;
-            //    txtBonCar.Text = datos.Element("BonCar").Value;
-            //    txtBonCon.Text = datos.Element("BonCon").Value;
-            //    txtBonSab.Text = datos.Element("BonSab").Value;
-            //    txtBonInt.Text = datos.Element("BonInt").Value;
-            //    txtBonDes.Text = datos.Element("BonDes").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Fuerza")].Text = datosAtt.Element("Fuerza").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Carisma")].Text = datosAtt.Element("Carisma").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Constitución")].Text = datosAtt.Element("Constitución").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Sabiduria")].Text = datosAtt.Element("Sabiduria").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Inteligencia")].Text = datosAtt.Element("Inteligencia").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "Destreza")].Text = datosAtt.Element("Destreza").Value;
+            }
+            IEnumerable<XElement> infoBonificadores = infoPersonaje.Descendants("Bonificadores");
+            foreach (XElement datosBon in infoBonificadores)
+            {
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonFue")].Text = datosBon.Element("BonFue").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonCar")].Text = datosBon.Element("BonCar").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonCon")].Text = datosBon.Element("BonCon").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonSab")].Text = datosBon.Element("BonSab").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonInt")].Text = datosBon.Element("BonInt").Value;
+                listDatos[listDatos.FindIndex(x => x.Tag == "BonDes")].Text = datosBon.Element("BonDes").Value;
             }
         }
-
-
     }
 }

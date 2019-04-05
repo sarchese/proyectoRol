@@ -19,9 +19,9 @@ namespace CreadorFichasRol
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
         }
-        private IList<TextBox> CrearLista()
+        private List<TextBox> CrearLista()
         {
-            IList<TextBox> miListaDeDatos = new List<TextBox>();
+            List<TextBox> miListaDeDatos = new List<TextBox>();
             miListaDeDatos.Add(txtName);
             miListaDeDatos.Add(txtCar);
             miListaDeDatos.Add(txtFue);
@@ -166,9 +166,10 @@ namespace CreadorFichasRol
                 openFileDialog1.ShowDialog();
                 string filename = openFileDialog1.SafeFileName;
                 string ruta = Path.Combine(path, filename);
-                IList<TextBox> listaTextBox = CrearLista();
+                List<TextBox> listaTextBox = CrearLista();
+                
                 Cargar carga = new Cargar();
-                carga.CargarDatos(listaTextBox, ruta);
+                carga.CargarDatos(listaTextBox, ruta, cbClase, cbRaza);
                 //leerXML();
                 btnTirada.Enabled = false;
             }
