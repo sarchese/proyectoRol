@@ -11,14 +11,13 @@ namespace CreadorFichasRol
 {
     public partial class frmPlantilla : Form
     {
-
         public frmPlantilla()
         {
 
             InitializeComponent();
             //MessageBox.Show(txtName.Tag.ToString());
         }
-        private void Tirada_Click_1(object sender, EventArgs e)
+        private void btnTirada_Click(object sender, EventArgs e)
         {
             using (frmObtenerAtributos frm = new frmObtenerAtributos())
             {
@@ -41,8 +40,7 @@ namespace CreadorFichasRol
                 txtBonDes.Text = bon.GetBonificador(txtDes.Text).ToString();
             }
         }
-
-        private void Guardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -55,7 +53,6 @@ namespace CreadorFichasRol
                 MessageBox.Show("No se ha podido guardar");
             }
         }
-
         private void GuardarXml()
         {
             string fecha = DateTime.Now.ToString("ddMMyyyy", CultureInfo.InvariantCulture);
@@ -98,7 +95,6 @@ namespace CreadorFichasRol
             w.Close();
             MessageBox.Show("El fichero ha sido guardado.");
         }
-
         private void leerXML()
         {
             string path = @".\Recursos\DB\PJ\";
@@ -127,87 +123,93 @@ namespace CreadorFichasRol
                 txtCon.Text = datos.Element("Constitución").Value;
                 txtSab.Text = datos.Element("Sabiduria").Value;
                 txtInt.Text = datos.Element("Inteligencia").Value;
-                txtDes.Text = datos.Element("Destreza").Value;                             
+                txtDes.Text = datos.Element("Destreza").Value;
+            }
+            IEnumerable<XElement> infoBonificadores = infoPersonaje.Descendants("Bonificadores");
+            foreach (XElement datos in infoBonificadores)
+            {
+                txtBonFue.Text = datos.Element("BonFue").Value;
+                txtBonCar.Text = datos.Element("BonCar").Value;
+                txtBonCon.Text = datos.Element("BonCon").Value;
+                txtBonSab.Text = datos.Element("BonSab").Value;
+                txtBonInt.Text = datos.Element("BonInt").Value;
+                txtBonDes.Text = datos.Element("BonDes").Value;
             }
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            cmdMax.Visible = false;
-            cmdMin.Visible = true;
-        }
-
-        private void cmdClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void cmdBar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void cmdMin_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            cmdMin.Visible = false;
-            cmdMax.Visible = true;
-        }
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void topBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
         private void btnCargar_Click(object sender, EventArgs e)
         {
             try
             {
-
                 leerXML();
+                btnTirada.Enabled = false;
             }
             catch (Exception)
             {
                 MessageBox.Show("No se puede cargar");
             }
         }
-
-        //private void txtExp_TextChanged(object sender, EventArgs e)
-        //{
-        //    string oldValueExp = lblNivel.Text;
-        //    //Int32.TryParse(lblNivel.Text, out oldValueExp);
-        //    if (txtExp.Text == "300")
-        //    {
-        //        lblNivel.Text = "2";
-        //    }
-        //    if (oldValueExp != lblNivel.Text)
-        //    {
-        //        button1.Enabled = true;
-        //        button2.Enabled = true;
-        //        button3.Enabled = true;
-        //        button4.Enabled = true;
-        //        button5.Enabled = true;
-        //        button6.Enabled = true;
-        //    }
-        //    if (txtExp.Text == "")
-        //    {
-        //        MessageBox.Show("No puede estar vacio.");
-        //        lblNivel.Text = oldValueExp;
-        //        button1.Enabled = false;
-        //        button2.Enabled = false;
-        //        button3.Enabled = false;
-        //        button4.Enabled = false;
-        //        button5.Enabled = false;
-        //        button6.Enabled = false;
-        //    }
-        //}
-
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            cmdMax.Visible = false;
+            cmdMin.Visible = true;
+        }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void btnBar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            cmdMin.Visible = false;
+            cmdMax.Visible = true;
+        }
+        private void topBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
     }
 }
+
+
+
+//private void txtExp_TextChanged(object sender, EventArgs e)
+//{
+//    string oldValueExp = lblNivel.Text;
+//    //Int32.TryParse(lblNivel.Text, out oldValueExp);
+//    if (txtExp.Text == "300")
+//    {
+//        lblNivel.Text = "2";
+//    }
+//    if (oldValueExp != lblNivel.Text)
+//    {
+//        button1.Enabled = true;
+//        button2.Enabled = true;
+//        button3.Enabled = true;
+//        button4.Enabled = true;
+//        button5.Enabled = true;
+//        button6.Enabled = true;
+//    }
+//    if (txtExp.Text == "")
+//    {
+//        MessageBox.Show("No puede estar vacio.");
+//        lblNivel.Text = oldValueExp;
+//        button1.Enabled = false;
+//        button2.Enabled = false;
+//        button3.Enabled = false;
+//        button4.Enabled = false;
+//        button5.Enabled = false;
+//        button6.Enabled = false;
+//    }
+//}
+
+

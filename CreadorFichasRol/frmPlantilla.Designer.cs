@@ -222,7 +222,7 @@
             this.btnSave.TabIndex = 49;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.Guardar_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // topBar
             // 
@@ -252,7 +252,7 @@
             this.cmdMin.TabIndex = 63;
             this.cmdMin.TabStop = false;
             this.cmdMin.Visible = false;
-            this.cmdMin.Click += new System.EventHandler(this.cmdMin_Click);
+            this.cmdMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnBar
             // 
@@ -265,7 +265,7 @@
             this.btnBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBar.TabIndex = 63;
             this.btnBar.TabStop = false;
-            this.btnBar.Click += new System.EventHandler(this.cmdBar_Click);
+            this.btnBar.Click += new System.EventHandler(this.btnBar_Click);
             // 
             // cmdMax
             // 
@@ -291,7 +291,7 @@
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 63;
             this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.cmdClose_Click);
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblinfinity
             // 
@@ -830,7 +830,7 @@
             this.btnTirada.TabIndex = 7;
             this.btnTirada.Text = "Tirada";
             this.btnTirada.UseVisualStyleBackColor = true;
-            this.btnTirada.Click += new System.EventHandler(this.Tirada_Click_1);
+            this.btnTirada.Click += new System.EventHandler(this.btnTirada_Click);
             // 
             // button1
             // 
@@ -861,7 +861,7 @@
             this.txtBonFue.Name = "txtBonFue";
             this.txtBonFue.Size = new System.Drawing.Size(24, 20);
             this.txtBonFue.TabIndex = 6;
-            this.txtBonFue.Tag = "BonFuerza";
+            this.txtBonFue.Tag = "BonFue";
             // 
             // txtSab
             // 
