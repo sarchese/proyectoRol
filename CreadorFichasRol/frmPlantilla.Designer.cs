@@ -245,9 +245,9 @@
             this.cmdMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMin.Image = global::CreadorFichasRol.Properties.Resources.minimize;
-            this.cmdMin.Location = new System.Drawing.Point(1075, 0);
+            this.cmdMin.Location = new System.Drawing.Point(1084, 7);
             this.cmdMin.Name = "cmdMin";
-            this.cmdMin.Size = new System.Drawing.Size(35, 35);
+            this.cmdMin.Size = new System.Drawing.Size(20, 20);
             this.cmdMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMin.TabIndex = 63;
             this.cmdMin.TabStop = false;
@@ -259,9 +259,9 @@
             this.btnBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBar.Image = global::CreadorFichasRol.Properties.Resources.bar;
-            this.btnBar.Location = new System.Drawing.Point(1034, 0);
+            this.btnBar.Location = new System.Drawing.Point(1043, 7);
             this.btnBar.Name = "btnBar";
-            this.btnBar.Size = new System.Drawing.Size(35, 35);
+            this.btnBar.Size = new System.Drawing.Size(20, 20);
             this.btnBar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnBar.TabIndex = 63;
             this.btnBar.TabStop = false;
@@ -272,9 +272,9 @@
             this.cmdMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdMax.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdMax.Image = global::CreadorFichasRol.Properties.Resources.maximize;
-            this.cmdMax.Location = new System.Drawing.Point(1075, 0);
+            this.cmdMax.Location = new System.Drawing.Point(1084, 7);
             this.cmdMax.Name = "cmdMax";
-            this.cmdMax.Size = new System.Drawing.Size(35, 35);
+            this.cmdMax.Size = new System.Drawing.Size(20, 20);
             this.cmdMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.cmdMax.TabIndex = 63;
             this.cmdMax.TabStop = false;
@@ -285,9 +285,9 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Image = global::CreadorFichasRol.Properties.Resources.Grey_close_x_svg__1_;
-            this.btnClose.Location = new System.Drawing.Point(1116, 0);
+            this.btnClose.Location = new System.Drawing.Point(1125, 7);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
+            this.btnClose.Size = new System.Drawing.Size(20, 20);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnClose.TabIndex = 63;
             this.btnClose.TabStop = false;
@@ -412,7 +412,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(940, 442);
+            this.tabPage2.Size = new System.Drawing.Size(928, 442);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
