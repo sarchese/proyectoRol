@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -17,8 +18,33 @@ namespace CreadorFichasRol
         {
 
             InitializeComponent();
+            tabMenu.DrawItem += new DrawItemEventHandler(tabMenu_DrawItem);
             //MessageBox.Show(txtName.Tag.ToString());
         }
+
+        private void tabMenu_DrawItem(Object sender, System.Windows.Forms.DrawItemEventArgs e)
+        {
+            Font _tabFont = new Font("Arial", 25.0f, FontStyle.Bold, GraphicsUnit.Pixel);
+            Graphics g = e.Graphics;
+            Rectangle _tabBoundsRaza = tabMenu.GetTabRect(0);
+            Rectangle _tabBoundsClase = tabMenu.GetTabRect(1);
+            Rectangle _tabBoundsAtrib = tabMenu.GetTabRect(2);
+            Rectangle _tabBoundsTrans = tabMenu.GetTabRect(3);
+            Rectangle _tabBoundsEquip = tabMenu.GetTabRect(4);
+            Rectangle _tabBoundsFicha = tabMenu.GetTabRect(5);
+            Brush _textBrush;
+            _textBrush = new SolidBrush(Color.Red);
+            StringFormat _stringFlags = new StringFormat();
+            _stringFlags.Alignment = StringAlignment.Center;
+            _stringFlags.LineAlignment = StringAlignment.Center;
+            g.DrawString("Raza", _tabFont, _textBrush, _tabBoundsRaza, new StringFormat(_stringFlags));
+            g.DrawString("Clase", _tabFont, _textBrush, _tabBoundsClase, new StringFormat(_stringFlags));
+            g.DrawString("Atributos", _tabFont, _textBrush, _tabBoundsAtrib, new StringFormat(_stringFlags));
+            g.DrawString("Transfondo", _tabFont, _textBrush, _tabBoundsTrans, new StringFormat(_stringFlags));
+            g.DrawString("Equipamientos", _tabFont, _textBrush, _tabBoundsEquip, new StringFormat(_stringFlags));
+            g.DrawString("Ficha", _tabFont, _textBrush, _tabBoundsFicha, new StringFormat(_stringFlags));
+        }
+
         private List<TextBox> CrearLista()
         {
             List<TextBox> miListaDeDatos = new List<TextBox>();
