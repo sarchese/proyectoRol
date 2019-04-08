@@ -37,8 +37,13 @@ namespace CreadorFichasRol
             StringFormat _stringFlags = new StringFormat();
             _stringFlags.Alignment = StringAlignment.Center;
             _stringFlags.LineAlignment = StringAlignment.Center;
-            g.DrawString("Raza", _tabFont, _textBrush, _tabBoundsRaza, new StringFormat(_stringFlags));
-            g.DrawString("Clase", _tabFont, _textBrush, _tabBoundsClase, new StringFormat(_stringFlags));
+            //g.DrawString("Raza", _tabFont, _textBrush, _tabBoundsRaza, new StringFormat(_stringFlags));
+            //g.DrawString("Clase", _tabFont, _textBrush, _tabBoundsClase, new StringFormat(_stringFlags));
+            Image imageRaza = Properties.Resources.raza;
+            Image imageClase = Properties.Resources.clases;
+            g.DrawImage(imageRaza, _tabBoundsRaza);
+            g.DrawImage(imageClase, _tabBoundsClase);
+           
             g.DrawString("Atributos", _tabFont, _textBrush, _tabBoundsAtrib, new StringFormat(_stringFlags));
             g.DrawString("Transfondo", _tabFont, _textBrush, _tabBoundsTrans, new StringFormat(_stringFlags));
             g.DrawString("Equipamientos", _tabFont, _textBrush, _tabBoundsEquip, new StringFormat(_stringFlags));

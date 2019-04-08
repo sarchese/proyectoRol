@@ -104,12 +104,12 @@
             this.txtCar = new System.Windows.Forms.TextBox();
             this.txtBonCon = new System.Windows.Forms.TextBox();
             this.tabMenu = new System.Windows.Forms.TabControl();
-            this.btnCargar = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.topBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmdMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBar)).BeginInit();
@@ -219,6 +219,7 @@
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Location = new System.Drawing.Point(1053, 596);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
@@ -970,6 +971,9 @@
             // tabMenu
             // 
             this.tabMenu.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.tabMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabMenu.Controls.Add(this.tabPage2);
             this.tabMenu.Controls.Add(this.tabPage3);
             this.tabMenu.Controls.Add(this.tabPage1);
@@ -985,21 +989,6 @@
             this.tabMenu.Size = new System.Drawing.Size(936, 468);
             this.tabMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabMenu.TabIndex = 60;
-            // 
-            // btnCargar
-            // 
-            this.btnCargar.Location = new System.Drawing.Point(967, 598);
-            this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(81, 23);
-            this.btnCargar.TabIndex = 64;
-            this.btnCargar.Text = "Cargar";
-            this.btnCargar.UseVisualStyleBackColor = true;
-            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.InitialDirectory = "/Recursos/DB/PJ/";
             // 
             // tabPage3
             // 
@@ -1040,6 +1029,22 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargar.Location = new System.Drawing.Point(967, 598);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(81, 23);
+            this.btnCargar.TabIndex = 64;
+            this.btnCargar.Text = "Cargar";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.InitialDirectory = "/Recursos/DB/PJ/";
             // 
             // frmPlantilla
             // 
